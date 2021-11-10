@@ -300,6 +300,7 @@ class DatasetManager(object):
     def add_file(self, file_path, data_name, if_train_file):
         text, slot, intent = self.__read_file(file_path)
 
+
         if if_train_file:
             self.__word_alphabet.add_instance(text)
             self.__slot_alphabet.add_instance(slot)
@@ -328,10 +329,12 @@ class DatasetManager(object):
         text, slot = [], []
 
         with open(file_path, 'r') as fr:
-            for line in fr.readlines():
+            for i, line in enumerate(fr.readlines()):
                 items = line.strip().split()
 
-                if len(items) == 1:
+                if len(items) == 1 and "B" not in items[0] and "I" not in items[0] and "O" not in items[0]:
+                    if len(text) == 0 and text[0]:
+                        print("empty index: ", i)
                     texts.append(text)
                     slots.append(slot)
                     intents.append(items)

@@ -1,0 +1,3 @@
+
+Test result: slot f1 score: 0.912675, intent acc score: 0.938954, semantic accuracy score: 0.883286.
+Accepted performance: (0.9126752336448598, 0.9389538792523867, 0.8832862713459728) at test dataset;

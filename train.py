@@ -7,13 +7,17 @@
 @LastModify	:           2019/05/07
 """
 
+import os
+
+file_path = "/tmp/pycharm_project_136"
+os.chdir(file_path)
+
 from utils.module import ModelManager
 from utils.loader import DatasetManager
 from utils.process import Processor
 
 import torch
 
-import os
 import json
 import random
 import argparse
@@ -45,7 +49,11 @@ parser.add_argument('--attention_hidden_dim', '-ahd', type=int, default=1024)
 parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
 
 if __name__ == "__main__":
+
+    os.environ["CUDA_VISIBLE_DEVICES"] = "3"
     args = parser.parse_args()
+
+    os.chdir(file_path)
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):
