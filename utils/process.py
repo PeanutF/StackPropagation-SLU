@@ -56,19 +56,21 @@ class Processor(object):
             time_start = time.time()
             self.__model.train()
 
-            for text_batch, slot_batch, intent_batch in tqdm(dataloader, ncols=50):
-                padded_text, [sorted_slot, sorted_intent], seq_lens, _ = self.__dataset.add_padding(
-                    text_batch, [(slot_batch, False), (intent_batch, False)]
+            for text_batch, slot_batch, intent_batch, word_batch in tqdm(dataloader, ncols=50):
+                padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, _ = self.__dataset.add_padding(
+                    text_batch, word_batch, [(slot_batch, False), (intent_batch, False)]
                 )
                 sorted_intent = [item * num for item, num in zip(sorted_intent, seq_lens)]
                 sorted_intent = list(Evaluator.expand_list(sorted_intent))
 
                 text_var = Variable(torch.LongTensor(padded_text))
+                word_var = Variable(torch.LongTensor(padded_word))
                 slot_var = Variable(torch.LongTensor(list(Evaluator.expand_list(sorted_slot))))
                 intent_var = Variable(torch.LongTensor(sorted_intent))
 
                 if torch.cuda.is_available():
                     text_var = text_var.cuda()
+                    word_var = word_var.cuda()
                     slot_var = slot_var.cuda()
                     intent_var = intent_var.cuda()
 
@@ -76,18 +78,18 @@ class Processor(object):
                 if random_slot < self.__dataset.slot_forcing_rate and \
                         random_intent < self.__dataset.intent_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, seq_lens, forced_slot=slot_var, forced_intent=intent_var
+                        text_var, word_var, seq_lens, forced_slot=slot_var, forced_intent=intent_var
                     )
                 elif random_slot < self.__dataset.slot_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, seq_lens, forced_slot=slot_var
+                        text_var, word_var, seq_lens, forced_slot=slot_var
                     )
                 elif random_intent < self.__dataset.intent_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, seq_lens, forced_intent=intent_var
+                        text_var, word_var, seq_lens, forced_intent=intent_var
                     )
                 else:
-                    slot_out, intent_out = self.__model(text_var, seq_lens)
+                    slot_out, intent_out = self.__model(text_var, word_var, seq_lens)
 
                 slot_loss = self.__criterion(slot_out, slot_var)
                 intent_loss = self.__criterion(intent_out, intent_var)
@@ -227,9 +229,9 @@ class Processor(object):
         pred_slot, real_slot = [], []
         pred_intent, real_intent = [], []
 
-        for text_batch, slot_batch, intent_batch in tqdm(dataloader, ncols=50):
-            padded_text, [sorted_slot, sorted_intent], seq_lens, sorted_index = dataset.add_padding(
-                text_batch, [(slot_batch, False), (intent_batch, False)], digital=False
+        for text_batch, slot_batch, intent_batch, word_batch in tqdm(dataloader, ncols=50):
+            padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, sorted_index = dataset.add_padding(
+                text_batch, word_batch, [(slot_batch, False), (intent_batch, False)], digital=False
             )
             # Because it's a visualization bug, in valid time, it doesn't matter
             # Only in test time will it need to restore
@@ -249,10 +251,14 @@ class Processor(object):
             digit_text = dataset.word_alphabet.get_index(padded_text)
             var_text = Variable(torch.LongTensor(digit_text))
 
+            digit_word = dataset.chinese_word_alphabet.get_index(padded_word)
+            var_word = Variable(torch.LongTensor(digit_word))
+
             if torch.cuda.is_available():
                 var_text = var_text.cuda()
+                var_word = var_word.cuda()
 
-            slot_idx, intent_idx = model(var_text, seq_lens, n_predicts=1)
+            slot_idx, intent_idx = model(var_text, var_word, seq_lens, n_predicts=1)
             nested_slot = Evaluator.nested_list([list(Evaluator.expand_list(slot_idx))], seq_lens)[0]
             
             if mode == 'test':

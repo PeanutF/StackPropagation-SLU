@@ -18,10 +18,11 @@ from torch.nn.utils.rnn import pad_packed_sequence
 
 class ModelManager(nn.Module):
 
-    def __init__(self, args, num_word, num_slot, num_intent):
+    def __init__(self, args, num_word, num_chinese_words, num_slot, num_intent):
         super(ModelManager, self).__init__()
 
         self.__num_word = num_word
+        self.__num_chinese_words = num_chinese_words
         self.__num_slot = num_slot
         self.__num_intent = num_intent
         self.__args = args
@@ -29,6 +30,12 @@ class ModelManager(nn.Module):
         # Initialize an embedding object.
         self.__embedding = EmbeddingCollection(
             self.__num_word,
+            self.__args.word_embedding_dim
+        )
+
+        # Initialize an embedding object.
+        self.__word_embedding = EmbeddingCollection(
+            self.__num_chinese_words,
             self.__args.word_embedding_dim
         )
 
@@ -91,12 +98,14 @@ class ModelManager(nn.Module):
 
         print('\nEnd of parameters show. Now training begins.\n\n')
 
-    def forward(self, text, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
+    def forward(self, text, chinese_word, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
         word_tensor, _ = self.__embedding(text)
+        chinese_word_tensor, _ = self.__word_embedding(chinese_word)
+        related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
-        lstm_hiddens = self.__encoder(word_tensor, seq_lens)
+        lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
-        attention_hiddens = self.__attention(word_tensor, seq_lens)
+        attention_hiddens = self.__attention(related_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
 
         pred_intent = self.__intent_decoder(

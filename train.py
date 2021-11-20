@@ -22,7 +22,7 @@ import numpy as np
 parser = argparse.ArgumentParser()
 
 # Training parameters.
-parser.add_argument('--data_dir', '-dd', type=str, default='data/crosswoz')
+parser.add_argument('--data_dir', '-dd', type=str, default='/tmp/pycharm_project_295/data/crosswoz')
 parser.add_argument('--save_dir', '-sd', type=str, default='save')
 parser.add_argument("--random_state", '-rs', type=int, default=0)
 parser.add_argument('--num_epoch', '-ne', type=int, default=300)
@@ -46,6 +46,8 @@ parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
 
 if __name__ == "__main__":
     args = parser.parse_args()
+
+
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):
@@ -76,6 +78,7 @@ if __name__ == "__main__":
     # Instantiate a network model object.
     model = ModelManager(
         args, len(dataset.word_alphabet),
+        len(dataset.chinese_word_alphabet),
         len(dataset.slot_alphabet),
         len(dataset.intent_alphabet))
     model.show_summary()

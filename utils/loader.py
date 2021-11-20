@@ -156,13 +156,14 @@ class TorchDataset(Dataset):
     instantiate DataLoader which deliveries data batch.
     """
 
-    def __init__(self, text, slot, intent):
+    def __init__(self, text, slot, intent, word):
         self.__text = text
         self.__slot = slot
         self.__intent = intent
+        self.__word = word
 
     def __getitem__(self, index):
-        return self.__text[index], self.__slot[index], self.__intent[index]
+        return self.__text[index], self.__slot[index], self.__intent[index], self.__word[index]
 
     def __len__(self):
         # Pre-check to avoid bug.
@@ -180,16 +181,19 @@ class DatasetManager(object):
         self.__word_alphabet = Alphabet('word', if_use_pad=True, if_use_unk=True)
         self.__slot_alphabet = Alphabet('slot', if_use_pad=False, if_use_unk=False)
         self.__intent_alphabet = Alphabet('intent', if_use_pad=False, if_use_unk=False)
+        self.__chinese_word_alphabet = Alphabet('chinese_word', if_use_pad=False, if_use_unk=False)
 
         # Record the raw text of dataset.
         self.__text_word_data = {}
         self.__text_slot_data = {}
         self.__text_intent_data = {}
+        self.__text_chinese_word_data = {}
 
         # Record the serialization of dataset.
         self.__digit_word_data = {}
         self.__digit_slot_data = {}
         self.__digit_intent_data = {}
+        self.__digit_chinese_word_data = {}
 
         self.__args = args
 
@@ -200,6 +204,10 @@ class DatasetManager(object):
     @property
     def word_alphabet(self):
         return deepcopy(self.__word_alphabet)
+
+    @property
+    def chinese_word_alphabet(self):
+        return deepcopy(self.__chinese_word_alphabet)
 
     @property
     def slot_alphabet(self):
@@ -291,30 +299,35 @@ class DatasetManager(object):
         if is_digital:
             return self.__digit_word_data[data_name], \
                    self.__digit_slot_data[data_name], \
-                   self.__digit_intent_data[data_name]
+                   self.__digit_intent_data[data_name], self.__digit_chinese_word_data[data_name]
         else:
             return self.__text_word_data[data_name], \
                    self.__text_slot_data[data_name], \
-                   self.__text_intent_data[data_name]
+                   self.__text_intent_data[data_name], self.__text_chinese_word_data[data_name]
 
     def add_file(self, file_path, data_name, if_train_file):
-        text, slot, intent = self.__read_file(file_path)
+        text, slot, intent, words = self.__read_file(file_path)
 
         if if_train_file:
             self.__word_alphabet.add_instance(text)
             self.__slot_alphabet.add_instance(slot)
             self.__intent_alphabet.add_instance(intent)
+            self.__chinese_word_alphabet.add_instance(words)
 
         # Record the raw text of dataset.
         self.__text_word_data[data_name] = text
         self.__text_slot_data[data_name] = slot
         self.__text_intent_data[data_name] = intent
+        self.__text_chinese_word_data[data_name] = words
+
 
         # Serialize raw text and stored it.
         self.__digit_word_data[data_name] = self.__word_alphabet.get_index(text)
+        self.__digit_chinese_word_data[data_name] =self.__chinese_word_alphabet.get_index(words)
         if if_train_file:
             self.__digit_slot_data[data_name] = self.__slot_alphabet.get_index(slot)
             self.__digit_intent_data[data_name] = self.__intent_alphabet.get_index(intent)
+
 
     @staticmethod
     def __read_file(file_path):
@@ -324,8 +337,8 @@ class DatasetManager(object):
         :return: list of sentence, list of slot and list of intent.
         """
 
-        texts, slots, intents = [], [], []
-        text, slot = [], []
+        texts, slots, intents, words = [], [], [], []
+        text, slot, word = [], [], []
 
         with open(file_path, 'r') as fr:
             for line in fr.readlines():
@@ -334,16 +347,18 @@ class DatasetManager(object):
                 if len(items) == 1:
                     texts.append(text)
                     slots.append(slot)
+                    words.append(word)
                     intents.append(items)
 
                     # clear buffer lists.
-                    text, slot = [], []
+                    text, slot, word = [], [], []
 
-                elif len(items) == 2:
+                elif len(items) == 3:
                     text.append(items[0].strip())
                     slot.append(items[1].strip())
+                    word.append(items[2].strip())
 
-        return texts, slots, intents
+        return texts, slots, intents, words
 
     def batch_delivery(self, data_name, batch_size=None, is_digital=True, shuffle=True):
         if batch_size is None:
@@ -353,33 +368,38 @@ class DatasetManager(object):
             text = self.__digit_word_data[data_name]
             slot = self.__digit_slot_data[data_name]
             intent = self.__digit_intent_data[data_name]
+            words = self.__digit_chinese_word_data[data_name]
         else:
             text = self.__text_word_data[data_name]
             slot = self.__text_slot_data[data_name]
             intent = self.__text_intent_data[data_name]
-        dataset = TorchDataset(text, slot, intent)
+            words = self.__text_chinese_word_data[data_name]
+        dataset = TorchDataset(text, slot, intent, words)
 
         return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, collate_fn=self.__collate_fn)
 
     @staticmethod
-    def add_padding(texts, items=None, digital=True):
+    def add_padding(texts, words, items=None, digital=True):
         len_list = [len(text) for text in texts]
         max_len = max(len_list)
 
         # Get sorted index of len_list.
         sorted_index = np.argsort(len_list)[::-1]
 
-        trans_texts, seq_lens, trans_items = [], [], None
+        trans_texts, seq_lens, trans_items, trans_word = [], [], None, []
         if items is not None:
             trans_items = [[] for _ in range(0, len(items))]
 
         for index in sorted_index:
             seq_lens.append(deepcopy(len_list[index]))
             trans_texts.append(deepcopy(texts[index]))
+            trans_word.append(deepcopy(words[index]))
             if digital:
                 trans_texts[-1].extend([0] * (max_len - len_list[index]))
+                trans_word[-1].extend([0] * (max_len - len_list[index]))
             else:
                 trans_texts[-1].extend(['<PAD>'] * (max_len - len_list[index]))
+                trans_word[-1].extend(['<PAD>'] * (max_len - len_list[index]))
 
             # This required specific if padding after sorting.
             if items is not None:
@@ -392,9 +412,9 @@ class DatasetManager(object):
                             item[-1].extend(['<PAD>'] * (max_len - len_list[index]))
 
         if items is not None:
-            return trans_texts, trans_items, seq_lens, sorted_index
+            return trans_texts, trans_word, trans_items, seq_lens, sorted_index
         else:
-            return trans_texts, seq_lens, sorted_index
+            return trans_texts, trans_word, seq_lens, sorted_index
 
     @staticmethod
     def __collate_fn(batch):
