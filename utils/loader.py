@@ -327,7 +327,7 @@ class DatasetManager(object):
         texts, slots, intents = [], [], []
         text, slot = [], []
 
-        with open(file_path, 'r') as fr:
+        with open(file_path, 'r', encoding='utf-8') as fr:
             for line in fr.readlines():
                 items = line.strip().split()
 
@@ -339,7 +339,7 @@ class DatasetManager(object):
                     # clear buffer lists.
                     text, slot = [], []
 
-                elif len(items) == 2:
+                elif len(items) == 3:
                     text.append(items[0].strip())
                     slot.append(items[1].strip())
 
