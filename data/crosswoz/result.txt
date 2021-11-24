@@ -1,0 +1,2 @@
+Test result: slot f1 score: 0.906058, intent acc score: 0.932819, semantic accuracy score: 0.884058.
+[Epoch 109]: In validation process, the slot f1 score is 0.902615, the intent acc is 0.931257, the semantic acc is 0.88, cost about 318.886375 seconds.
