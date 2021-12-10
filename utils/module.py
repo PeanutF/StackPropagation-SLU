@@ -12,6 +12,8 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+from torch.autograd import Variable
+from torch.nn import Parameter, init
 from torch.nn.utils.rnn import pack_padded_sequence
 from torch.nn.utils.rnn import pad_packed_sequence
 
@@ -48,6 +50,14 @@ class ModelManager(nn.Module):
 
         # Initialize an self-attention layer.
         self.__attention = SelfAttention(
+            self.__args.word_embedding_dim,
+            self.__args.attention_hidden_dim,
+            self.__args.attention_output_dim,
+            self.__args.dropout_rate
+        )
+
+        # todo
+        self.__attention_with_loc = SelfAttention(
             self.__args.word_embedding_dim,
             self.__args.attention_hidden_dim,
             self.__args.attention_output_dim,
@@ -98,14 +108,18 @@ class ModelManager(nn.Module):
 
         print('\nEnd of parameters show. Now training begins.\n\n')
 
-    def forward(self, text, chinese_word, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None):
+    def forward(self, text, chinese_word, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None, loc_matrix=None):
         word_tensor, _ = self.__embedding(text)
         chinese_word_tensor, _ = self.__word_embedding(chinese_word)
         related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
         lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
-        attention_hiddens = self.__attention(related_tensor, seq_lens)
+
+        if loc_matrix is not None:
+            attention_hiddens = self.__attention(related_tensor, seq_lens, loc_matrix=loc_matrix)
+        else:
+            attention_hiddens = self.__attention(related_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
 
         pred_intent = self.__intent_decoder(
@@ -394,8 +408,9 @@ class QKVAttention(nn.Module):
         self.__key_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
         self.__value_layer = nn.Linear(self.__value_dim, self.__output_dim)
         self.__dropout_layer = nn.Dropout(p=self.__dropout_rate)
+        self.__weight = nn.Parameter(torch.ones(1))
 
-    def forward(self, input_query, input_key, input_value):
+    def forward(self, input_query, input_key, input_value, loc_matrix=None):
         """ The forward propagation of attention.
 
         Here we require the first dimension of input key
@@ -412,10 +427,15 @@ class QKVAttention(nn.Module):
         linear_key = self.__key_layer(input_key)
         linear_value = self.__value_layer(input_value)
 
-        score_tensor = F.softmax(torch.matmul(
+        tmp = torch.matmul(
             linear_query,
-            linear_key.transpose(-2, -1)
-        ) / math.sqrt(self.__hidden_dim), dim=-1)
+            linear_key.transpose(-2, -1))
+
+        if loc_matrix is not None:
+            tmp = torch.add(tmp, self.__weight * loc_matrix)
+        score_tensor = F.softmax(
+            tmp / math.sqrt(self.__hidden_dim),
+            dim=-1)
         forced_tensor = torch.matmul(score_tensor, linear_value)
         forced_tensor = self.__dropout_layer(forced_tensor)
 
@@ -435,19 +455,27 @@ class SelfAttention(nn.Module):
 
         # Record network parameters.
         self.__dropout_layer = nn.Dropout(self.__dropout_rate)
+
         self.__attention_layer = QKVAttention(
             self.__input_dim, self.__input_dim, self.__input_dim,
             self.__hidden_dim, self.__output_dim, self.__dropout_rate
         )
 
-    def forward(self, input_x, seq_lens):
+    def forward(self, input_x, seq_lens, loc_matrix=None):
         dropout_x = self.__dropout_layer(input_x)
-        attention_x = self.__attention_layer(
-            dropout_x, dropout_x, dropout_x
-        )
+
+        if loc_matrix is not None:
+            attention_x = self.__attention_layer(
+                dropout_x, dropout_x, dropout_x, loc_matrix=loc_matrix
+            )
+        else:
+            attention_x = self.__attention_layer(
+                dropout_x, dropout_x, dropout_x
+            )
 
         flat_x = torch.cat(
             [attention_x[i][:seq_lens[i], :] for
              i in range(0, len(seq_lens))], dim=0
         )
         return flat_x
+

@@ -156,14 +156,23 @@ class TorchDataset(Dataset):
     instantiate DataLoader which deliveries data batch.
     """
 
-    def __init__(self, text, slot, intent, word):
+    def __init__(self, text, slot, intent, word, locations):
         self.__text = text
         self.__slot = slot
         self.__intent = intent
         self.__word = word
+        self.__locations = locations
 
     def __getitem__(self, index):
-        return self.__text[index], self.__slot[index], self.__intent[index], self.__word[index]
+
+        locations = []
+        for i in range(len(self.__locations[index])):
+            location_line = []
+            for j in range(len(self.__locations[index])):
+                tmp = int(self.__locations[index][i]) - int(self.__locations[index][j])
+                location_line.append(tmp)
+            locations.append(location_line)
+        return self.__text[index], self.__slot[index], self.__intent[index], self.__word[index], locations
 
     def __len__(self):
         # Pre-check to avoid bug.
@@ -194,6 +203,8 @@ class DatasetManager(object):
         self.__digit_slot_data = {}
         self.__digit_intent_data = {}
         self.__digit_chinese_word_data = {}
+
+        self.__word_location = {}
 
         self.__args = args
 
@@ -271,9 +282,9 @@ class DatasetManager(object):
         Convenient function to instantiate a dataset object.
         """
 
-        train_path = os.path.join(self.__args.data_dir, 'train.txt')
-        dev_path = os.path.join(self.__args.data_dir, 'dev.txt')
-        test_path = os.path.join(self.__args.data_dir, 'test.txt')
+        train_path = os.path.join(self.__args.data_dir, 'train_with_location.txt')
+        dev_path = os.path.join(self.__args.data_dir, 'dev_with_location.txt')
+        test_path = os.path.join(self.__args.data_dir, 'test_with_location.txt')
 
         self.add_file(train_path, 'train', if_train_file=True)
         self.add_file(dev_path, 'dev', if_train_file=False)
@@ -299,20 +310,25 @@ class DatasetManager(object):
         if is_digital:
             return self.__digit_word_data[data_name], \
                    self.__digit_slot_data[data_name], \
-                   self.__digit_intent_data[data_name], self.__digit_chinese_word_data[data_name]
+                   self.__digit_intent_data[data_name],\
+                   self.__digit_chinese_word_data[data_name], \
+                   self.__word_location[data_name]
         else:
             return self.__text_word_data[data_name], \
                    self.__text_slot_data[data_name], \
-                   self.__text_intent_data[data_name], self.__text_chinese_word_data[data_name]
+                   self.__text_intent_data[data_name], self.__text_chinese_word_data[data_name], \
+                   self.__word_location[data_name]
 
     def add_file(self, file_path, data_name, if_train_file):
-        text, slot, intent, words = self.__read_file(file_path)
+        text, slot, intent, words, location = self.__read_file(file_path)
 
         if if_train_file:
             self.__word_alphabet.add_instance(text)
             self.__slot_alphabet.add_instance(slot)
             self.__intent_alphabet.add_instance(intent)
             self.__chinese_word_alphabet.add_instance(words)
+
+        self.__word_location[data_name] = location
 
         # Record the raw text of dataset.
         self.__text_word_data[data_name] = text
@@ -337,8 +353,9 @@ class DatasetManager(object):
         :return: list of sentence, list of slot and list of intent.
         """
 
-        texts, slots, intents, words = [], [], [], []
+        texts, slots, intents, words, locations = [], [], [], [], []
         text, slot, word = [], [], []
+        location = []
 
         with open(file_path, 'r') as fr:
             for line in fr.readlines():
@@ -349,16 +366,18 @@ class DatasetManager(object):
                     slots.append(slot)
                     words.append(word)
                     intents.append(items)
+                    locations.append(location)
 
                     # clear buffer lists.
-                    text, slot, word = [], [], []
+                    text, slot, word, location = [], [], [], []
 
-                elif len(items) == 3:
+                elif len(items) == 4:
                     text.append(items[0].strip())
                     slot.append(items[1].strip())
                     word.append(items[2].strip())
+                    location.append(items[3])
 
-        return texts, slots, intents, words
+        return texts, slots, intents, words, locations
 
     def batch_delivery(self, data_name, batch_size=None, is_digital=True, shuffle=True):
         if batch_size is None:
@@ -374,14 +393,24 @@ class DatasetManager(object):
             slot = self.__text_slot_data[data_name]
             intent = self.__text_intent_data[data_name]
             words = self.__text_chinese_word_data[data_name]
-        dataset = TorchDataset(text, slot, intent, words)
+
+        locations = self.__word_location[data_name]
+        dataset = TorchDataset(text, slot, intent, words, locations)
 
         return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, collate_fn=self.__collate_fn)
 
     @staticmethod
-    def add_padding(texts, words, items=None, digital=True):
+    def add_padding(texts, words, location_matrix, items=None, digital=True):
         len_list = [len(text) for text in texts]
         max_len = max(len_list)
+
+        for matrix in location_matrix:
+            for index, line in enumerate(matrix):
+                length = len(line)
+                for i in range(length, max_len):
+                    line.append(index - length)
+            for i in range(len(matrix), max_len):
+                matrix.append([0] * max_len)
 
         # Get sorted index of len_list.
         sorted_index = np.argsort(len_list)[::-1]
@@ -412,9 +441,9 @@ class DatasetManager(object):
                             item[-1].extend(['<PAD>'] * (max_len - len_list[index]))
 
         if items is not None:
-            return trans_texts, trans_word, trans_items, seq_lens, sorted_index
+            return trans_texts, trans_word, trans_items, seq_lens, sorted_index, location_matrix
         else:
-            return trans_texts, trans_word, seq_lens, sorted_index
+            return trans_texts, trans_word, seq_lens, sorted_index, location_matrix
 
     @staticmethod
     def __collate_fn(batch):

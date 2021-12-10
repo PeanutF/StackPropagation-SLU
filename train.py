@@ -25,7 +25,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--data_dir', '-dd', type=str, default='/tmp/pycharm_project_295/data/crosswoz')
 parser.add_argument('--save_dir', '-sd', type=str, default='save')
 parser.add_argument("--random_state", '-rs', type=int, default=0)
-parser.add_argument('--num_epoch', '-ne', type=int, default=300)
+parser.add_argument('--num_epoch', '-ne', type=int, default=100)
 parser.add_argument('--batch_size', '-bs', type=int, default=16)
 parser.add_argument('--l2_penalty', '-lp', type=float, default=1e-6)
 parser.add_argument("--learning_rate", '-lr', type=float, default=0.001)
@@ -47,7 +47,7 @@ parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
 if __name__ == "__main__":
     args = parser.parse_args()
 
-
+    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):
@@ -87,7 +87,12 @@ if __name__ == "__main__":
     process = Processor(dataset, model, args.batch_size)
     process.train()
 
-    print('\nAccepted performance: ' + str(Processor.validate(
+    result = '\nAccepted performance: ' + str(Processor.validate(
         os.path.join(args.save_dir, "model/model.pkl"),
         os.path.join(args.save_dir, "model/dataset.pkl"),
-        args.batch_size)) + " at test dataset;\n")
+        args.batch_size)) + " at test dataset;\n"
+
+    print(result)
+
+    with open("./data/crosswoz/result_word_location.txt", "w+", encoding="UTF-8") as f:
+        f.write(result)
