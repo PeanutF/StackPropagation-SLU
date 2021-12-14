@@ -20,7 +20,7 @@ from torch.nn.utils.rnn import pad_packed_sequence
 
 class ModelManager(nn.Module):
 
-    def __init__(self, args, num_word, num_chinese_words, num_slot, num_intent):
+    def __init__(self, args, num_word, num_chinese_words, num_slot, num_intent, max_sentence_length=200):
         super(ModelManager, self).__init__()
 
         self.__num_word = num_word
@@ -28,6 +28,7 @@ class ModelManager(nn.Module):
         self.__num_slot = num_slot
         self.__num_intent = num_intent
         self.__args = args
+        self.__loc_max_len = max_sentence_length
 
         # Initialize an embedding object.
         self.__embedding = EmbeddingCollection(
@@ -40,6 +41,8 @@ class ModelManager(nn.Module):
             self.__num_chinese_words,
             self.__args.word_embedding_dim
         )
+
+        self.__loc_embedding = nn.Embedding(self.__loc_max_len, self.__args.attention_hidden_dim)   #embedding dimension is equal to attention_hidden_dim
 
         # Initialize an LSTM Encoder object.
         self.__encoder = LSTMEncoder(
@@ -80,6 +83,10 @@ class ModelManager(nn.Module):
             extra_dim=self.__num_intent
         )
 
+        self.__position_layer = PositionalEncoding(
+            d_model=self.__args.attention_hidden_dim
+        )
+
         # One-hot encoding for augment data feed. 
         self.__intent_embedding = nn.Embedding(
             self.__num_intent, self.__num_intent
@@ -108,16 +115,25 @@ class ModelManager(nn.Module):
 
         print('\nEnd of parameters show. Now training begins.\n\n')
 
-    def forward(self, text, chinese_word, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None, loc_matrix=None):
+    def forward(self, text, chinese_word, seq_lens, n_predicts=None, forced_slot=None, forced_intent=None, loc=None):
+        """
+            loc: [B, max_len]
+        """
+
         word_tensor, _ = self.__embedding(text)
         chinese_word_tensor, _ = self.__word_embedding(chinese_word)
+        loc_tensor = self.__loc_embedding(loc)
+        trans_loc_tensor = torch.transpose(loc_tensor, 0, 1)
+        position_matrix = self.__position_layer(trans_loc_tensor)
+        trans_position_matrix = torch.transpose(position_matrix, 0, 1)
+
         related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
         lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
 
-        if loc_matrix is not None:
-            attention_hiddens = self.__attention(related_tensor, seq_lens, loc_matrix=loc_matrix)
+        if loc_tensor is not None:
+            attention_hiddens = self.__attention(related_tensor, seq_lens, loc_vector=trans_position_matrix)
         else:
             attention_hiddens = self.__attention(related_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
@@ -407,10 +423,11 @@ class QKVAttention(nn.Module):
         self.__query_layer = nn.Linear(self.__query_dim, self.__hidden_dim)
         self.__key_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
         self.__value_layer = nn.Linear(self.__value_dim, self.__output_dim)
+        self.__loc_layer = nn.Linear(self.__hidden_dim, self.__hidden_dim)
         self.__dropout_layer = nn.Dropout(p=self.__dropout_rate)
         self.__weight = nn.Parameter(torch.ones(1))
 
-    def forward(self, input_query, input_key, input_value, loc_matrix=None):
+    def forward(self, input_query, input_key, input_value, loc_vector=None):
         """ The forward propagation of attention.
 
         Here we require the first dimension of input key
@@ -427,12 +444,16 @@ class QKVAttention(nn.Module):
         linear_key = self.__key_layer(input_key)
         linear_value = self.__value_layer(input_value)
 
-        tmp = torch.matmul(
-            linear_query,
-            linear_key.transpose(-2, -1))
+        if loc_vector is not None:
+            linear_loc = self.__loc_layer(loc_vector)
+            tmp = torch.matmul(
+                torch.add(linear_query, linear_loc),
+                linear_key.transpose(-2, -1))
+        else:
+            tmp = torch.matmul(
+                linear_query,
+                linear_key.transpose(-2, -1))
 
-        if loc_matrix is not None:
-            tmp = torch.add(tmp, self.__weight * loc_matrix)
         score_tensor = F.softmax(
             tmp / math.sqrt(self.__hidden_dim),
             dim=-1)
@@ -461,12 +482,12 @@ class SelfAttention(nn.Module):
             self.__hidden_dim, self.__output_dim, self.__dropout_rate
         )
 
-    def forward(self, input_x, seq_lens, loc_matrix=None):
+    def forward(self, input_x, seq_lens, loc_vector=None):
         dropout_x = self.__dropout_layer(input_x)
 
-        if loc_matrix is not None:
+        if loc_vector is not None:
             attention_x = self.__attention_layer(
-                dropout_x, dropout_x, dropout_x, loc_matrix=loc_matrix
+                dropout_x, dropout_x, dropout_x, loc_vector=loc_vector
             )
         else:
             attention_x = self.__attention_layer(
@@ -479,3 +500,23 @@ class SelfAttention(nn.Module):
         )
         return flat_x
 
+class PositionalEncoding(nn.Module):
+
+    def __init__(self, d_model: int, dropout: float = 0.1, max_len: int = 5000):
+        super().__init__()
+        self.dropout = nn.Dropout(p=dropout)
+
+        position = torch.arange(max_len).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, d_model, 2) * (-math.log(10000.0) / d_model))
+        pe = torch.zeros(max_len, 1, d_model)
+        pe[:, 0, 0::2] = torch.sin(position * div_term)
+        pe[:, 0, 1::2] = torch.cos(position * div_term)
+        self.register_buffer('pe', pe)
+
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        """
+        Args:
+            x: Tensor, shape [seq_len, batch_size, embedding_dim]
+        """
+        x = x + self.pe[:x.size(0)]
+        return self.dropout(x)

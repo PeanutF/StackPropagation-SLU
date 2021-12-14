@@ -165,14 +165,7 @@ class TorchDataset(Dataset):
 
     def __getitem__(self, index):
 
-        locations = []
-        for i in range(len(self.__locations[index])):
-            location_line = []
-            for j in range(len(self.__locations[index])):
-                tmp = int(self.__locations[index][i]) - int(self.__locations[index][j])
-                location_line.append(tmp)
-            locations.append(location_line)
-        return self.__text[index], self.__slot[index], self.__intent[index], self.__word[index], locations
+        return self.__text[index], self.__slot[index], self.__intent[index], self.__word[index], self.__locations[index]
 
     def __len__(self):
         # Pre-check to avoid bug.
@@ -191,20 +184,22 @@ class DatasetManager(object):
         self.__slot_alphabet = Alphabet('slot', if_use_pad=False, if_use_unk=False)
         self.__intent_alphabet = Alphabet('intent', if_use_pad=False, if_use_unk=False)
         self.__chinese_word_alphabet = Alphabet('chinese_word', if_use_pad=False, if_use_unk=False)
+        self.__word_location = []
 
         # Record the raw text of dataset.
         self.__text_word_data = {}
         self.__text_slot_data = {}
         self.__text_intent_data = {}
         self.__text_chinese_word_data = {}
+        self.__text_loc_data = {}
 
         # Record the serialization of dataset.
         self.__digit_word_data = {}
         self.__digit_slot_data = {}
         self.__digit_intent_data = {}
         self.__digit_chinese_word_data = {}
+        self.__digit_loc_data = {}
 
-        self.__word_location = {}
 
         self.__args = args
 
@@ -327,19 +322,20 @@ class DatasetManager(object):
             self.__slot_alphabet.add_instance(slot)
             self.__intent_alphabet.add_instance(intent)
             self.__chinese_word_alphabet.add_instance(words)
-
-        self.__word_location[data_name] = location
+            self.__word_location.append(location)
 
         # Record the raw text of dataset.
         self.__text_word_data[data_name] = text
         self.__text_slot_data[data_name] = slot
         self.__text_intent_data[data_name] = intent
         self.__text_chinese_word_data[data_name] = words
+        self.__text_loc_data[data_name] = location
 
 
         # Serialize raw text and stored it.
         self.__digit_word_data[data_name] = self.__word_alphabet.get_index(text)
-        self.__digit_chinese_word_data[data_name] =self.__chinese_word_alphabet.get_index(words)
+        self.__digit_chinese_word_data[data_name] = self.__chinese_word_alphabet.get_index(words)
+        self.__digit_loc_data[data_name] = location
         if if_train_file:
             self.__digit_slot_data[data_name] = self.__slot_alphabet.get_index(slot)
             self.__digit_intent_data[data_name] = self.__intent_alphabet.get_index(intent)
@@ -375,7 +371,7 @@ class DatasetManager(object):
                     text.append(items[0].strip())
                     slot.append(items[1].strip())
                     word.append(items[2].strip())
-                    location.append(items[3])
+                    location.append(int(items[3]))
 
         return texts, slots, intents, words, locations
 
@@ -393,24 +389,20 @@ class DatasetManager(object):
             slot = self.__text_slot_data[data_name]
             intent = self.__text_intent_data[data_name]
             words = self.__text_chinese_word_data[data_name]
-
-        locations = self.__word_location[data_name]
-        dataset = TorchDataset(text, slot, intent, words, locations)
+        location = self.__text_loc_data[data_name]
+        dataset = TorchDataset(text, slot, intent, words, location)
 
         return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle, collate_fn=self.__collate_fn)
 
     @staticmethod
-    def add_padding(texts, words, location_matrix, items=None, digital=True):
+    def add_padding(texts, words, location_vector, items=None, digital=True):
         len_list = [len(text) for text in texts]
         max_len = max(len_list)
 
-        for matrix in location_matrix:
-            for index, line in enumerate(matrix):
-                length = len(line)
-                for i in range(length, max_len):
-                    line.append(index - length)
-            for i in range(len(matrix), max_len):
-                matrix.append([0] * max_len)
+        for item in location_vector:
+            length = len(item)
+            for i in range(length, max_len):
+                item.append(length)
 
         # Get sorted index of len_list.
         sorted_index = np.argsort(len_list)[::-1]
@@ -441,9 +433,9 @@ class DatasetManager(object):
                             item[-1].extend(['<PAD>'] * (max_len - len_list[index]))
 
         if items is not None:
-            return trans_texts, trans_word, trans_items, seq_lens, sorted_index, location_matrix
+            return trans_texts, trans_word, trans_items, seq_lens, sorted_index, location_vector
         else:
-            return trans_texts, trans_word, seq_lens, sorted_index, location_matrix
+            return trans_texts, trans_word, seq_lens, sorted_index, location_vector
 
     @staticmethod
     def __collate_fn(batch):

@@ -56,9 +56,9 @@ class Processor(object):
             time_start = time.time()
             self.__model.train()
 
-            for text_batch, slot_batch, intent_batch, word_batch, location_batch in tqdm(dataloader, ncols=50):
-                padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, _, location_batch = self.__dataset.add_padding(
-                    text_batch, word_batch, location_batch, [(slot_batch, False), (intent_batch, False)]
+            for text_batch, slot_batch, intent_batch, word_batch, loc_vector_batch in tqdm(dataloader, ncols=50):
+                padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, _, loc_vector_batch = self.__dataset.add_padding(
+                    text_batch, word_batch, loc_vector_batch, [(slot_batch, False), (intent_batch, False)]
                 )
                 sorted_intent = [item * num for item, num in zip(sorted_intent, seq_lens)]
                 sorted_intent = list(Evaluator.expand_list(sorted_intent))
@@ -67,31 +67,31 @@ class Processor(object):
                 word_var = Variable(torch.LongTensor(padded_word))
                 slot_var = Variable(torch.LongTensor(list(Evaluator.expand_list(sorted_slot))))
                 intent_var = Variable(torch.LongTensor(sorted_intent))
-                location_var = Variable(torch.LongTensor(location_batch))
+                loc_vector_var = Variable(torch.LongTensor(loc_vector_batch))
 
                 if torch.cuda.is_available():
                     text_var = text_var.cuda()
                     word_var = word_var.cuda()
                     slot_var = slot_var.cuda()
                     intent_var = intent_var.cuda()
-                    location_var = location_var.cuda()
+                    loc_vector_var = loc_vector_var.cuda()
 
                 random_slot, random_intent = random.random(), random.random()
                 if random_slot < self.__dataset.slot_forcing_rate and \
                         random_intent < self.__dataset.intent_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, word_var, seq_lens, forced_slot=slot_var, forced_intent=intent_var, loc_matrix=location_var
+                        text_var, word_var, seq_lens, forced_slot=slot_var, forced_intent=intent_var, loc=loc_vector_var
                     )
                 elif random_slot < self.__dataset.slot_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, word_var, seq_lens, forced_slot=slot_var, loc_matrix=location_var
+                        text_var, word_var, seq_lens, forced_slot=slot_var, loc=loc_vector_var
                     )
                 elif random_intent < self.__dataset.intent_forcing_rate:
                     slot_out, intent_out = self.__model(
-                        text_var, word_var, seq_lens, forced_intent=intent_var, loc_matrix=location_var
+                        text_var, word_var, seq_lens, forced_intent=intent_var, loc=loc_vector_var
                     )
                 else:
-                    slot_out, intent_out = self.__model(text_var, word_var, seq_lens, loc_matrix=location_var)
+                    slot_out, intent_out = self.__model(text_var, word_var, seq_lens, loc=loc_vector_var)
 
                 slot_loss = self.__criterion(slot_out, slot_var)
                 intent_loss = self.__criterion(intent_out, intent_var)
