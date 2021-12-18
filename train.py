@@ -43,11 +43,12 @@ parser.add_argument('--slot_decoder_hidden_dim', '-sdhd', type=int, default=64)
 parser.add_argument('--intent_decoder_hidden_dim', '-idhd', type=int, default=64)
 parser.add_argument('--attention_hidden_dim', '-ahd', type=int, default=1024)
 parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
+parser.add_argument('--gpu', '-g', type=str, default="0")
 
 if __name__ == "__main__":
     args = parser.parse_args()
 
-    os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+    os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):

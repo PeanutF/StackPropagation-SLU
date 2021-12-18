@@ -57,7 +57,8 @@ class Processor(object):
             self.__model.train()
 
             for text_batch, slot_batch, intent_batch, word_batch, loc_vector_batch in tqdm(dataloader, ncols=50):
-                padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, _, loc_vector_batch = self.__dataset.add_padding(
+                padded_text, padded_word, [sorted_slot,
+                                           sorted_intent], seq_lens, _, loc_vector_batch = self.__dataset.add_padding(
                     text_batch, word_batch, loc_vector_batch, [(slot_batch, False), (intent_batch, False)]
                 )
                 sorted_intent = [item * num for item, num in zip(sorted_intent, seq_lens)]
@@ -231,9 +232,10 @@ class Processor(object):
         pred_slot, real_slot = [], []
         pred_intent, real_intent = [], []
 
-        for text_batch, slot_batch, intent_batch, word_batch, location_batch, in tqdm(dataloader, ncols=50):
-            padded_text, padded_word, [sorted_slot, sorted_intent], seq_lens, sorted_index, location_batch = dataset.add_padding(
-                text_batch, word_batch, location_batch, [(slot_batch, False), (intent_batch, False)], digital=False
+        for text_batch, slot_batch, intent_batch, word_batch, loc_vector_batch, in tqdm(dataloader, ncols=50):
+            padded_text, padded_word, [sorted_slot,
+                                       sorted_intent], seq_lens, sorted_index, loc_vector_batch = dataset.add_padding(
+                text_batch, word_batch, loc_vector_batch, [(slot_batch, False), (intent_batch, False)], digital=False
             )
             # Because it's a visualization bug, in valid time, it doesn't matter
             # Only in test time will it need to restore
@@ -246,7 +248,7 @@ class Processor(object):
                 for i in range(len(sorted_index)):
                     tmp_intent[sorted_index[i]] = sorted_intent[i]
                 sorted_intent = tmp_intent
-            
+
             real_slot.extend(sorted_slot)
             real_intent.extend(list(Evaluator.expand_list(sorted_intent)))
 
@@ -255,31 +257,31 @@ class Processor(object):
 
             digit_word = dataset.chinese_word_alphabet.get_index(padded_word)
             var_word = Variable(torch.LongTensor(digit_word))
-            location_batch = Variable(torch.LongTensor(location_batch))
+            loc_vector_var = Variable(torch.LongTensor(loc_vector_batch))
 
             if torch.cuda.is_available():
                 var_text = var_text.cuda()
                 var_word = var_word.cuda()
-                location_batch = location_batch.cuda()
+                loc_vector_var = loc_vector_var.cuda()
 
-            slot_idx, intent_idx = model(var_text, var_word, seq_lens, loc_matrix=location_batch, n_predicts=1)
+            slot_idx, intent_idx = model(var_text, var_word, seq_lens, loc=loc_vector_var, n_predicts=1)
             nested_slot = Evaluator.nested_list([list(Evaluator.expand_list(slot_idx))], seq_lens)[0]
-            
+
             if mode == 'test':
                 tmp_r_slot = [[] for _ in range(len(sorted_index))]
                 for i in range(len(sorted_index)):
                     tmp_r_slot[sorted_index[i]] = nested_slot[i]
                 nested_slot = tmp_r_slot
-            
+
             pred_slot.extend(dataset.slot_alphabet.get_instance(nested_slot))
             nested_intent = Evaluator.nested_list([list(Evaluator.expand_list(intent_idx))], seq_lens)[0]
-            
+
             if mode == 'test':
                 tmp_intent = [[] for _ in range(len(sorted_index))]
                 for i in range(len(sorted_index)):
                     tmp_intent[sorted_index[i]] = nested_intent[i]
                 nested_intent = tmp_intent
-            
+
             pred_intent.extend(dataset.intent_alphabet.get_instance(nested_intent))
 
         exp_pred_intent = Evaluator.max_freq_predict(pred_intent)
@@ -287,6 +289,7 @@ class Processor(object):
 
 
 class Evaluator(object):
+    fault_turn = 0
 
     @staticmethod
     def semantic_acc(pred_slot, real_slot, pred_intent, real_intent):
@@ -295,13 +298,21 @@ class Evaluator(object):
         given sentence, including slot and intent.
         """
 
+        fault_example = []
+        Evaluator.fault_turn += 1.0
         total_count, correct_count = 0.0, 0.0
         for p_slot, r_slot, p_intent, r_intent in zip(pred_slot, real_slot, pred_intent, real_intent):
 
             if p_slot == r_slot and p_intent == r_intent:
-                correct_count += 1.0
-            total_count += 1.0
+                correct_count += 1
+            else:
+                fault_example.append("p_slot, r_slot, p_intent, r_intent: \n" +
+                                     ",".join(p_slot) + "\n" + ",".join(r_slot) + "\n" + p_intent + "\t" + r_intent + "\n")
 
+            total_count += 1.0
+        with open("./fault_example_" + str(Evaluator.fault_turn), "w+") as f:
+            for item in fault_example:
+                f.write(item)
         return 1.0 * correct_count / total_count
 
     @staticmethod

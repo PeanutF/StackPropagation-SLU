@@ -42,7 +42,7 @@ class ModelManager(nn.Module):
             self.__args.word_embedding_dim
         )
 
-        self.__loc_embedding = nn.Embedding(self.__loc_max_len, self.__args.attention_hidden_dim)   #embedding dimension is equal to attention_hidden_dim
+        self.__loc_embedding = nn.Embedding(self.__loc_max_len, self.__args.word_embedding_dim)   #embedding dimension is equal to attention_hidden_dim
 
         # Initialize an LSTM Encoder object.
         self.__encoder = LSTMEncoder(
@@ -84,7 +84,7 @@ class ModelManager(nn.Module):
         )
 
         self.__position_layer = PositionalEncoding(
-            d_model=self.__args.attention_hidden_dim
+            d_model=self.__args.word_embedding_dim
         )
 
         # One-hot encoding for augment data feed. 
@@ -423,7 +423,8 @@ class QKVAttention(nn.Module):
         self.__query_layer = nn.Linear(self.__query_dim, self.__hidden_dim)
         self.__key_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
         self.__value_layer = nn.Linear(self.__value_dim, self.__output_dim)
-        self.__loc_layer = nn.Linear(self.__hidden_dim, self.__hidden_dim)
+        self.__loc_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
+        self.__loc_key = nn.Linear(self.__key_dim, self.__hidden_dim)
         self.__dropout_layer = nn.Dropout(p=self.__dropout_rate)
         self.__weight = nn.Parameter(torch.ones(1))
 
@@ -446,9 +447,16 @@ class QKVAttention(nn.Module):
 
         if loc_vector is not None:
             linear_loc = self.__loc_layer(loc_vector)
+            key_loc = self.__loc_key(loc_vector)
+
             tmp = torch.matmul(
-                torch.add(linear_query, linear_loc),
+                linear_query,
                 linear_key.transpose(-2, -1))
+            tmp_loc = torch.matmul(
+                linear_loc,
+                key_loc.transpose(-2, -1))
+
+            tmp = torch.add(tmp, tmp_loc)
         else:
             tmp = torch.matmul(
                 linear_query,

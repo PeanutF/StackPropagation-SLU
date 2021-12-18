@@ -6,7 +6,7 @@
 @Framework  :           Pytorch
 @LastModify	:           2019/05/07
 """
-
+import copy
 import os
 import numpy as np
 from copy import deepcopy
@@ -398,6 +398,7 @@ class DatasetManager(object):
     def add_padding(texts, words, location_vector, items=None, digital=True):
         len_list = [len(text) for text in texts]
         max_len = max(len_list)
+        location_vector = copy.deepcopy(location_vector)
 
         for item in location_vector:
             length = len(item)
