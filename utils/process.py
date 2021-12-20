@@ -306,8 +306,12 @@ class Evaluator(object):
             if p_slot == r_slot and p_intent == r_intent:
                 correct_count += 1
             else:
-                fault_example.append("p_slot, r_slot, p_intent, r_intent: \n" +
-                                     ",".join(p_slot) + "\n" + ",".join(r_slot) + "\n" + p_intent + "\t" + r_intent + "\n")
+                fault_example.append("p_slot: {} \n , r_slot: {} \n , p_intent: {} \n , r_intent: {} \n\n".format(
+                    ",".join(p_slot),
+                    ",".join(r_slot),
+                    p_intent,
+                    r_intent
+                ))
 
             total_count += 1.0
         with open("./fault_example_" + str(Evaluator.fault_turn), "w+") as f:
