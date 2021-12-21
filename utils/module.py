@@ -59,7 +59,6 @@ class ModelManager(nn.Module):
             self.__args.dropout_rate
         )
 
-        # todo
         self.__attention_with_loc = SelfAttention(
             self.__args.word_embedding_dim,
             self.__args.attention_hidden_dim,
@@ -132,11 +131,11 @@ class ModelManager(nn.Module):
         lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
 
-        if loc_tensor is not None:
-            attention_hiddens = self.__attention(related_tensor, seq_lens, loc_vector=trans_position_matrix)
-        else:
-            attention_hiddens = self.__attention(related_tensor, seq_lens)
+        attention_hiddens_with_loc = self.__attention_with_loc(related_tensor, seq_lens, loc_vector=trans_position_matrix)
+
+        attention_hiddens = self.__attention(related_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
+        hiddens_with_loc = torch.cat([attention_hiddens_with_loc, lstm_hiddens], dim=1)
 
         pred_intent = self.__intent_decoder(
             hiddens, seq_lens,
@@ -150,7 +149,7 @@ class ModelManager(nn.Module):
             feed_intent = pred_intent
 
         pred_slot = self.__slot_decoder(
-            hiddens, seq_lens,
+            hiddens_with_loc, seq_lens,
             forced_input=forced_slot,
             extra_input=feed_intent
         )
