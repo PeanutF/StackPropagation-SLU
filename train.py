@@ -22,10 +22,10 @@ import numpy as np
 parser = argparse.ArgumentParser()
 
 # Training parameters.
-parser.add_argument('--data_dir', '-dd', type=str, default='/tmp/pycharm_project_295/data/crosswoz')
+parser.add_argument('--data_dir', '-dd', type=str, default='./data/crosswoz')
 parser.add_argument('--save_dir', '-sd', type=str, default='save')
 parser.add_argument("--random_state", '-rs', type=int, default=0)
-parser.add_argument('--num_epoch', '-ne', type=int, default=300)
+parser.add_argument('--num_epoch', '-ne', type=int, default=100)
 parser.add_argument('--batch_size', '-bs', type=int, default=16)
 parser.add_argument('--l2_penalty', '-lp', type=float, default=1e-6)
 parser.add_argument("--learning_rate", '-lr', type=float, default=0.001)
@@ -43,11 +43,12 @@ parser.add_argument('--slot_decoder_hidden_dim', '-sdhd', type=int, default=64)
 parser.add_argument('--intent_decoder_hidden_dim', '-idhd', type=int, default=64)
 parser.add_argument('--attention_hidden_dim', '-ahd', type=int, default=1024)
 parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
+parser.add_argument('--gpu', '-g', type=str, default="0")
 
 if __name__ == "__main__":
     args = parser.parse_args()
 
-
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu
 
     # Save training and model parameters.
     if not os.path.exists(args.save_dir):
