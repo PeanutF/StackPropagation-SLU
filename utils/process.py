@@ -6,7 +6,7 @@
 @Framework  :           Pytorch
 @LastModify	:           2019/05/07
 """
-
+import slot as slot
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -48,6 +48,8 @@ class Processor(object):
         best_dev_slot = 0.0
         best_dev_intent = 0.0
         best_dev_sent = 0.0
+
+        best_acc_accurate = 0
 
         dataloader = self.__dataset.batch_delivery('train')
         for epoch in range(0, self.__dataset.num_epoch):
@@ -117,7 +119,8 @@ class Processor(object):
             dev_f1_score, dev_acc, dev_sent_acc = self.estimate(if_dev=True, test_batch=self.__batch_size)
 
             if dev_f1_score > best_dev_slot or dev_acc > best_dev_intent or dev_sent_acc > best_dev_sent:
-                test_f1, test_acc, test_sent_acc = self.estimate(if_dev=False, test_batch=self.__batch_size)
+                test_f1, test_acc, test_sent_acc = self.estimate(if_dev=False, best_acc_accurate=best_acc_accurate,
+                                                                 test_batch=self.__batch_size)
 
                 if dev_f1_score > best_dev_slot:
                     best_dev_slot = dev_f1_score
@@ -125,6 +128,12 @@ class Processor(object):
                     best_dev_intent = dev_acc
                 if dev_sent_acc > best_dev_sent:
                     best_dev_sent = dev_sent_acc
+
+                if test_sent_acc > best_acc_accurate:
+                    best_acc_accurate = test_sent_acc
+                    with open("./best_test_result", "w") as result_file:
+                        result_file.write('Test result: slot f1 score: {:.6f}, intent acc score: {:.6f}, semantic '
+                                          'accuracy score: {:.6f}. \n'.format(test_f1, test_acc, test_sent_acc))
 
                 print('\nTest result: slot f1 score: {:.6f}, intent acc score: {:.6f}, semantic '
                       'accuracy score: {:.6f}.'.format(test_f1, test_acc, test_sent_acc))
@@ -141,7 +150,7 @@ class Processor(object):
                       'the intent acc is {:2.6f}, the semantic acc is {:.2f}, cost about ' \
                       '{:2.6f} seconds.\n'.format(epoch, dev_f1_score, dev_acc, dev_sent_acc, time_con))
 
-    def estimate(self, if_dev, test_batch=100):
+    def estimate(self, if_dev, best_acc_accurate=None, test_batch=100):
         """
         Estimate the performance of model on dev or test dataset.
         """
@@ -158,6 +167,9 @@ class Processor(object):
         slot_f1_socre = miulab.computeF1Score(pred_slot, real_slot)[0]
         intent_acc = Evaluator.accuracy(pred_intent, real_intent)
         sent_acc = Evaluator.semantic_acc(pred_slot, real_slot, pred_intent, real_intent)
+
+        if best_acc_accurate is not None and best_acc_accurate < sent_acc:
+            Evaluator.slot_acc(pred_slot, real_slot, self.__dataset)
 
         return slot_f1_socre, intent_acc, sent_acc
 
@@ -318,6 +330,61 @@ class Evaluator(object):
             for item in fault_example:
                 f.write(item)
         return 1.0 * correct_count / total_count
+
+    @staticmethod
+    def slot_change(input_slot):
+        if input_slot == "O":
+            return input_slot
+        input_slot = input_slot[2:]
+        if "酒店.酒店设施" in input_slot:
+            return "酒店.酒店设施"
+        return input_slot
+
+
+    @staticmethod
+    def slot_acc(pred_slot, real_slot, dataset):
+        """
+        Compute accuracy of slot
+        {
+            slot1: xxx%,
+            slot2: xxx%
+        }
+        """
+        Evaluator.fault_turn += 1.0
+        total_count, correct_count = {}, {}
+        all_total_count = 0
+        for p_slot, r_slot in zip(pred_slot, real_slot):
+            for i, r_slot_item in enumerate(r_slot):
+
+                simple_r_slot_item = Evaluator.slot_change(r_slot_item)
+                if r_slot_item == p_slot[i]:
+                    if simple_r_slot_item in correct_count.keys():
+                        correct_count[simple_r_slot_item] += 1
+                    else:
+                        correct_count[simple_r_slot_item] = 1
+
+                if simple_r_slot_item in total_count.keys():
+                    total_count[simple_r_slot_item] += 1
+                else:
+                    total_count[simple_r_slot_item] = 1
+
+                all_total_count += 1
+
+
+        with open("./acc_slot", "w") as f:
+
+            f.write("slot\taccuracy\tpercent\n")
+            for key in total_count.keys():
+                if key in correct_count.keys():
+                    f.write("{}\t{}\t{}\n".format(
+                        key,
+                        1.0 * correct_count[key] / total_count[key],
+                        1.0 * total_count[key] / all_total_count
+                    ))
+                else:
+                    f.write("{}\t0.0\t{}\n".format(
+                        key, 1.0 * total_count[key] / all_total_count
+                    ))
 
     @staticmethod
     def accuracy(pred_list, real_list):

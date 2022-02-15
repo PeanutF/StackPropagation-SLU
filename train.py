@@ -6,7 +6,9 @@
 @Framework  :           Pytorch
 @LastModify	:           2019/05/07
 """
+import self as self
 
+from slot_realted_embedding.process import SlotProcessor
 from utils.module import ModelManager
 from utils.loader import DatasetManager
 from utils.process import Processor
@@ -44,6 +46,9 @@ parser.add_argument('--intent_decoder_hidden_dim', '-idhd', type=int, default=64
 parser.add_argument('--attention_hidden_dim', '-ahd', type=int, default=1024)
 parser.add_argument('--attention_output_dim', '-aod', type=int, default=128)
 parser.add_argument('--gpu', '-g', type=str, default="0")
+
+# "train" or "pretrain" slot pos
+parser.add_argument('--mode', '-m', type=str, default="train")
 
 if __name__ == "__main__":
     args = parser.parse_args()
@@ -84,8 +89,11 @@ if __name__ == "__main__":
         len(dataset.intent_alphabet))
     model.show_summary()
 
-    # To train and evaluate the models.
-    process = Processor(dataset, model, args.batch_size)
+    if args.mode == "pretrain":
+        process = SlotProcessor(dataset, model, args.batch_size)
+    elif args.mode == "train":
+        # To train and evaluate the models.
+        process = Processor(dataset, model, args.batch_size)
     process.train()
 
     result = '\nAccepted performance: ' + str(Processor.validate(

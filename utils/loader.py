@@ -17,6 +17,8 @@ from ordered_set import OrderedSet
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 
+from utils.process import Evaluator
+
 
 class Alphabet(object):
     """
@@ -251,6 +253,10 @@ class DatasetManager(object):
     def slot_forcing_rate(self):
         return self.__args.slot_forcing_rate
 
+    @property
+    def slot_num(self):
+        return len(self.__slot_alphabet)
+
     def show_summary(self):
         """
         :return: show summary of dataset, training parameters.
@@ -269,6 +275,15 @@ class DatasetManager(object):
         print('\trate of dropout in network:                {};'.format(self.__args.dropout_rate))
         print('\tteacher forcing rate(slot)		    		{};'.format(self.slot_forcing_rate))
         print('\tteacher forcing rate(intent):		    	{};'.format(self.intent_forcing_rate))
+
+        with open("./slot_label", "w") as f:
+            slot_set = []
+            for i in range(0, self.slot_alphabet.__len__()):
+                name = self.slot_alphabet.get_instance(i)
+                name = Evaluator.slot_change(name)
+                slot_set.append(name)
+            for item in sorted(set(slot_set)):
+                f.write(str(item) + "\n")
 
         print("\nEnd of parameters show. Save dir: {}.\n\n".format(self.save_dir))
 

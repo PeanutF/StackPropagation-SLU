@@ -93,6 +93,13 @@ class ModelManager(nn.Module):
         self.__intent_embedding.weight.data = torch.eye(self.__num_intent)
         self.__intent_embedding.weight.requires_grad = False
 
+        position = torch.arange(self.__loc_max_len).unsqueeze(1)
+        div_term = torch.exp(torch.arange(0, self.__args.word_embedding_dim, 2) * (-math.log(10000.0) / self.__args.word_embedding_dim))
+        pe = torch.zeros(self.__loc_max_len, 1, self.__args.word_embedding_dim)
+        pe[:, 0, 0::2] = torch.sin(position * div_term)
+        pe[:, 0, 1::2] = torch.cos(position * div_term)
+        self.register_buffer('pe', pe)
+
     def show_summary(self):
         """
         print the abstract of the defined model.
@@ -121,17 +128,24 @@ class ModelManager(nn.Module):
 
         word_tensor, _ = self.__embedding(text)
         chinese_word_tensor, _ = self.__word_embedding(chinese_word)
-        loc_tensor = self.__loc_embedding(loc)
-        trans_loc_tensor = torch.transpose(loc_tensor, 0, 1)
-        position_matrix = self.__position_layer(trans_loc_tensor)
-        trans_position_matrix = torch.transpose(position_matrix, 0, 1)
+
+        # loc_tensor = self.__loc_embedding(loc)
+        # trans_loc_tensor = torch.transpose(loc_tensor, 0, 1)
+        # position_matrix = self.__position_layer(trans_loc_tensor)
+        # trans_position_matrix = torch.transpose(position_matrix, 0, 1)
+
+        position_matrix = torch.zeros(len(word_tensor), self.__loc_max_len, self.__args.word_embedding_dim).cuda()
+        squeeze_pe = torch.squeeze(self.pe, 1)
+        for index, item in enumerate(loc):
+            for i, loc_item in enumerate(item):
+                position_matrix[index][i] = squeeze_pe[loc_item.int()]
 
         related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
         lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
 
-        attention_hiddens_with_loc = self.__attention_with_loc(related_tensor, seq_lens, loc_vector=trans_position_matrix)
+        attention_hiddens_with_loc = self.__attention_with_loc(related_tensor, seq_lens, loc_vector=position_matrix)
 
         attention_hiddens = self.__attention(related_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
@@ -259,6 +273,7 @@ class LSTMEncoder(nn.Module):
         """
 
         # Padded_text should be instance of LongTensor.
+        # B, L, E
         dropout_text = self.__dropout_layer(embedded_text)
 
         # Pack and Pad process for input of variable length.
@@ -427,6 +442,12 @@ class QKVAttention(nn.Module):
         self.__dropout_layer = nn.Dropout(p=self.__dropout_rate)
         self.__weight = nn.Parameter(torch.ones(1))
 
+        # todo for dev
+        max_len = 200
+        batch_size = 16
+        self.param = nn.Parameter(torch.ones(batch_size, max_len, self.__hidden_dim)).cuda()
+
+
     def forward(self, input_query, input_key, input_value, loc_vector=None):
         """ The forward propagation of attention.
 
@@ -445,8 +466,8 @@ class QKVAttention(nn.Module):
         linear_value = self.__value_layer(input_value)
 
         if loc_vector is not None:
-            linear_loc = self.__loc_layer(loc_vector)
-            key_loc = self.__loc_key(loc_vector)
+            linear_loc = self.__loc_layer(loc_vector[:, :len(input_query[0]), :])
+            key_loc = self.__loc_key(loc_vector[:, :len(input_query[0]), :])
 
             tmp = torch.matmul(
                 linear_query,
@@ -454,8 +475,16 @@ class QKVAttention(nn.Module):
             tmp_loc = torch.matmul(
                 linear_loc,
                 key_loc.transpose(-2, -1))
+            tmp_1 = torch.matmul(
+                self.param[:len(linear_query), :len(linear_query[0]), :],
+                linear_key.transpose(-2, -1))
+            tmp_2 = torch.matmul(
+                linear_query,
+                key_loc.transpose(-2, -1))
 
             tmp = torch.add(tmp, tmp_loc)
+            tmp = torch.add(tmp, tmp_1)
+            tmp = torch.add(tmp, tmp_2)
         else:
             tmp = torch.matmul(
                 linear_query,
