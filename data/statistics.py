@@ -44,20 +44,24 @@ def count_sentences(lines):
     return result
 
 
-def count_dataset(dataset_name):
+def count_dataset(dataset_name, query_type="all"):
     intent_statistics = {}
     slot_statistics = {}
-    if os.path.isfile("./{}/train.txt".format(dataset_name)):
+    slot_cnt = 0
+    if (query_type == "all" or query_type == "train") and os.path.isfile("./{}/train.txt".format(dataset_name)):
         with open("./{}/train.txt".format(dataset_name), "r") as file:
-            intent_statistics, slot_statistics, avg_len = process_file(intent_statistics, slot_statistics, file)
+            intent_statistics, slot_statistics, avg_len, slot_cnt = process_file(intent_statistics, slot_statistics,
+                                                                                 file, slot_cnt)
 
-    if os.path.isfile("./{}/train.txt".format(dataset_name)):
-        with open("./{}/train.txt".format(dataset_name), "r") as file:
-            intent_statistics, slot_statistics, avg_len = process_file(intent_statistics, slot_statistics, file)
+    if (query_type == "all" or query_type == "dev") and os.path.isfile("./{}/dev.txt".format(dataset_name)):
+        with open("./{}/dev.txt".format(dataset_name), "r") as file:
+            intent_statistics, slot_statistics, avg_len, slot_cnt = process_file(intent_statistics, slot_statistics,
+                                                                                 file, slot_cnt)
 
-    if os.path.isfile("./{}/train.txt".format(dataset_name)):
-        with open("./{}/train.txt".format(dataset_name), "r") as file:
-            intent_statistics, slot_statistics, avg_len = process_file(intent_statistics, slot_statistics, file)
+    if (query_type == "all" or query_type == "test") and os.path.isfile("./{}/test.txt".format(dataset_name)):
+        with open("./{}/test.txt".format(dataset_name), "r") as file:
+            intent_statistics, slot_statistics, avg_len, slot_cnt = process_file(intent_statistics, slot_statistics,
+                                                                                 file, slot_cnt)
 
     print("intent\tnumber")
     for intent in intent_statistics.keys():
@@ -68,25 +72,45 @@ def count_dataset(dataset_name):
     for slot in slot_statistics.keys():
         print(slot + "\t" + str(slot_statistics[slot]))
 
+    slot_total_len = 0
+    for key in slot_statistics.keys():
+        if key != "O":
+            slot_total_len += slot_statistics[key]
+
+    total_sentences = 0
+    for key in intent_statistics.keys():
+        total_sentences += intent_statistics[key]
+
     print()
-    print("avg_len:{}".format(avg_len))
+    print("slot number\t" + str(len(slot_statistics.keys())))
+    print("intent number\t" + str(len(intent_statistics.keys())))
+    print("total_sentences\t{}".format(str(total_sentences)))
+    print("avg_len\t{}".format(avg_len))
+    print("slot_cnt\t{}".format(slot_cnt))
+    print("slot_avg_cnt_per_type\t{}".format(1.0 * slot_cnt / (len(slot_statistics.keys()) - 1)))
+    print("slot_total_len\t{}".format(slot_total_len))
+    print("avg_slot_len\t{}".format(1.0 * slot_total_len / slot_cnt))
 
 
-def process_file(intent_statistics, slot_statistics, file):
+def process_file(intent_statistics, slot_statistics, file, slot_cnt):
     sentence_len = 0
     total_len = 0
     total_cnt = 0
     for line in file.readlines():
         line = line.split(" ")
         if len(line) == 3:
-            dict_inc_item(slot_statistics, line[1])
+            if "B-" in line[1] or "S-" in line[1]:
+                slot_cnt += 1
+            dict_inc_item(slot_statistics,
+                          line[1].replace("\n", "").replace("B-", "").replace("I-", "").replace("E-", "").replace("S-",
+                                                                                                                  ""))
             sentence_len += 1
         elif len(line) == 1 and line[0] != "\n":
-            dict_inc_item(intent_statistics, line[0].replace("\n", ""))
+            dict_inc_item(intent_statistics, line[0])
             total_len += sentence_len
             total_cnt += 1
             sentence_len = 0
-    return intent_statistics, slot_statistics, 1.0 * total_len/total_cnt
+    return intent_statistics, slot_statistics, 1.0 * total_len / total_cnt, slot_cnt
 
 
 def dict_inc_item(dict_name, item):
@@ -97,4 +121,4 @@ def dict_inc_item(dict_name, item):
 
 
 if __name__ == '__main__':
-    count_dataset("SMP-ECDT")
+    count_dataset("crosswoz")
