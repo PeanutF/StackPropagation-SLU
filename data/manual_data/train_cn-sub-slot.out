@@ -1,0 +1,1941 @@
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_city
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O O atis_airfare
+B-fromloc I-fromloc B-toloc B-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date O O B-fromloc B-toloc O O O atis_flight
+B-depart_date O B-toloc O O O O O O atis_airfare
+O B-fromloc O B-toloc O O B-fromloc O O B-toloc O O B-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc B-toloc B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+O O O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O atis_airfare
+B-fromloc O B-toloc I-toloc O B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-fromloc O B-toloc O B-toloc B-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-fromloc I-fromloc O B-toloc O O O B-depart_date I-depart_date O O O O O O atis_date
+B-fromloc B-toloc B-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O O B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date B-toloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O O O O B-fromloc O B-toloc O B-toloc O O O O O O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc O O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc I-fromloc O B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-fromloc B-toloc O O O B-fromloc I-fromloc I-fromloc I-fromloc B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time B-fromloc O B-toloc O O O O O atis_airfare
+O O O B-toloc O O O B-fromloc O O B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc I-toloc O O O O O O O atis_flight
+O O O O B-depart_date I-depart_date O B-toloc I-toloc O O O O O O O O O O O O O O O O O O O O O O O atis_city
+B-depart_date I-depart_date O B-toloc O O O O O O B-fromloc I-fromloc O O O O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+O O B-depart_date B-fromloc O B-fromloc O B-toloc I-toloc O O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O atis_flight
+O B-depart_date I-depart_date O O O O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date O O O B-fromloc B-toloc O O O B-fromloc B-toloc O O O atis_flight
+O B-depart_date B-toloc I-toloc I-toloc O B-depart_date I-depart_date O O O O O B-fromloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O O O O O O atis_airfare
+B-toloc I-toloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+O B-fromloc B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_airfare
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+O B-depart_date I-depart_date O O B-fromloc O B-fromloc O O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc I-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc I-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date O B-toloc O O O O atis_flight
+B-fromloc O B-fromloc O B-toloc O B-toloc O B-toloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-toloc O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date B-depart_time I-depart_time I-depart_time B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O O B-fromloc B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O O B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+O O O O O O O O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O O B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date O O O B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date O O O B-toloc O O atis_flight
+B-depart_date I-depart_date O B-toloc B-fromloc O atis_flight
+B-fromloc O B-toloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O O B-depart_date B-fromloc O O O O O atis_city
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O B-fromloc B-toloc atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc I-toloc B-depart_date I-depart_date I-depart_date atis_flight
+O B-fromloc O B-fromloc O B-toloc I-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-fromloc O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc B-fromloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-toloc B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date O B-depart_date I-depart_date B-fromloc B-toloc O O B-fromloc B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date O O O B-fromloc I-fromloc B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc I-fromloc I-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc I-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O B-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_time O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_date
+O O B-fromloc O B-toloc I-toloc I-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc B-depart_time I-depart_time I-depart_time O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc B-toloc O O O O O O O O atis_airfare
+B-depart_date O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O O B-depart_time atis_flight
+O B-fromloc O B-toloc O O O O O O O O O atis_date#atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+O O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+O O B-depart_date B-depart_time O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_date#atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O O B-toloc O O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc I-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc B-toloc O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+O B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O O atis_airfare
+O O O O B-depart_date I-depart_date O O B-fromloc B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O atis_airfare
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O O O atis_airfare
+O B-depart_date O B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-toloc I-toloc O atis_flight
+O O B-fromloc O B-toloc O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+O O B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc B-depart_time O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_time I-depart_time B-depart_time I-depart_time O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O atis_flight
+O B-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_airfare
+O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_time O B-fromloc O B-toloc O O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc I-fromloc O B-fromloc O B-toloc O B-toloc O O O B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O O O O atis_airfare
+O O O O B-toloc B-depart_date O O O O O atis_airfare
+B-depart_date O B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc I-toloc O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O O atis_airfare
+B-fromloc B-toloc B-depart_date I-depart_date O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O O O atis_flight
+O O O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date B-fromloc O B-toloc O O atis_flight
+O O O O O O O B-fromloc O O B-toloc O O O O O O O O atis_date
+O O O O B-toloc O O O O O O O O atis_flight
+O B-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc I-toloc O O O O O O O O O O B-toloc O O O O O O O O O O O O O O O O O O O atis_date#atis_city
+B-fromloc O B-toloc O O O O O O O O O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O atis_date#atis_airfare
+O B-fromloc O B-toloc O O O O B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_date
+O B-fromloc O B-toloc O O B-depart_date O O O O B-depart_date I-depart_date I-depart_date B-depart_time O B-toloc O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date B-depart_time B-depart_date O B-fromloc O B-toloc O atis_flight
+O O B-depart_date O B-fromloc O B-toloc O O O O O O O O O O O O O atis_flight
+O O B-fromloc O O O B-toloc O O O B-fromloc O B-fromloc O O B-toloc O O O O O O B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date O B-toloc O O B-fromloc O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc I-fromloc O B-toloc I-toloc I-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date O B-toloc O O O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O B-toloc O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O B-depart_time O B-depart_time B-fromloc O B-toloc O O O O O O O O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-fromloc O B-toloc O O O O O O atis_date
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O B-fromloc O B-toloc O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O O O O O O atis_city
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc O O B-fromloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc I-toloc O atis_flight
+O O B-depart_date I-depart_date O B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+B-depart_date O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date O O B-toloc O O B-fromloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date O B-toloc O B-toloc B-fromloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O B-depart_time I-depart_time I-depart_time B-depart_time O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O O O O B-fromloc O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc I-toloc O O O O atis_airfare
+B-fromloc O B-toloc I-toloc atis_flight
+B-depart_date O O O O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc B-toloc O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+O B-depart_date O B-toloc B-depart_date I-depart_date I-depart_date B-toloc O B-depart_date O O O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc I-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O O O atis_flight
+O B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O O O O O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O B-depart_date I-depart_date B-depart_time O B-fromloc O B-toloc O B-toloc O atis_flight
+O B-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O atis_flight
+O B-depart_date B-fromloc O B-toloc O O atis_flight
+O B-toloc O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O O B-toloc B-fromloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc O atis_flight
+B-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O O O O O O O atis_flight
+O B-toloc O O O O O O atis_date
+O O O B-depart_date I-depart_date B-toloc O O atis_airfare
+O O O O O B-toloc I-toloc I-toloc O O O O B-fromloc O O O O O O O O O O atis_date
+O O O B-toloc O O atis_flight
+O O O O O B-toloc O O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_date
+O O B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O O O O O atis_date#atis_airfare
+B-fromloc O B-toloc O O O O O O O O O O O O O atis_date#atis_airfare
+B-depart_date I-depart_date I-depart_date O O B-toloc I-toloc I-toloc O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O B-fromloc O B-toloc O O B-depart_date I-depart_date O O O O O atis_flight
+O O O B-toloc O O B-depart_date I-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc O O O O O O O O O O O O O O O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date O O O B-fromloc B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-toloc O O O O O atis_date
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O atis_city
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc O O O O B-fromloc O O O atis_flight
+B-fromloc O B-toloc O O O O atis_flight
+O O B-depart_date O B-toloc I-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O B-fromloc O O atis_flight
+B-depart_date I-depart_date O O O O B-toloc O O O atis_flight
+O O B-toloc O O O O O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O B-toloc atis_date
+B-fromloc O B-toloc O O O O O atis_date
+O O O B-fromloc O B-toloc O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date O O O O O O B-fromloc B-toloc atis_flight
+O O B-fromloc O B-toloc O O O O O O B-depart_date O O O O O O O atis_airfare
+B-depart_date O B-toloc O O atis_flight
+O O O B-toloc O O atis_flight
+O B-fromloc O B-toloc O O O B-toloc O O atis_flight
+B-depart_date I-depart_date O O O O O atis_flight
+B-fromloc B-toloc O O O O O O O atis_date
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-fromloc O O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time B-fromloc I-fromloc O B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc B-depart_time O B-depart_time O O O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O B-depart_time I-depart_time O atis_flight
+B-fromloc O B-fromloc O B-toloc O O O O O O atis_date
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc I-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc B-toloc B-depart_date O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O B-fromloc O B-toloc O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_time atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_time O B-depart_time O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+O B-fromloc O B-toloc O O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date O B-fromloc B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O I-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date O B-toloc O O O O O O O O atis_airfare
+O O B-toloc B-fromloc O B-fromloc O O O O atis_flight
+O O O B-toloc O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O atis_date
+O O B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O B-fromloc O atis_airfare
+O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O B-fromloc I-fromloc O atis_flight
+B-depart_date O B-fromloc I-fromloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc I-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O B-toloc O O O O B-fromloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O B-toloc O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O atis_flight
+B-fromloc O B-toloc O O O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time I-depart_time I-depart_time I-depart_time I-depart_time B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date O O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time I-depart_time B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O O O O O O O atis_date#atis_airfare
+B-fromloc O B-toloc O O O O O O O O B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O O B-toloc O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_airfare
+B-depart_date I-depart_date O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc B-depart_time O O O O atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O B-toloc I-toloc O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O B-depart_date I-depart_date I-depart_time O B-depart_date B-depart_time O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_time O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc I-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+O O B-depart_date O O O O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc O atis_flight
+O O B-fromloc O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc I-fromloc I-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O O O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O B-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time O B-depart_date I-depart_date O B-fromloc O B-toloc B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O O B-depart_date O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-fromloc O B-toloc O O O atis_airfare
+O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+O O O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date O O O B-fromloc O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-depart_time B-fromloc O B-toloc O O O O B-depart_date I-depart_date I-depart_time O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_airfare
+O B-fromloc O B-toloc O O atis_flight
+O O B-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O B-fromloc I-fromloc O B-fromloc O O O O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_time O atis_airfare
+O B-fromloc O B-toloc O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-fromloc O B-toloc O B-depart_date I-depart_date O O O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time O B-depart_time O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O O B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date O B-depart_date O B-fromloc O B-fromloc O B-toloc O O O atis_flight
+O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O O O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O O O O O O O O O O O O atis_airfare
+B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-depart_date O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc I-toloc I-toloc O O O O O O O O O O O O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time atis_flight
+B-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+O O O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O O atis_airfare
+O O O B-depart_date B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date O O O O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+O O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_airfare
+O B-fromloc O B-toloc O O O B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-fromloc O O O atis_airfare
+O B-depart_date I-depart_date O B-toloc O O O B-fromloc atis_flight
+O B-fromloc O B-toloc O O O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+O O B-fromloc B-depart_date I-depart_date I-depart_date O B-toloc O O O B-toloc O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O B-toloc I-toloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O B-fromloc O B-toloc B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date O B-toloc O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O O O B-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O B-fromloc B-toloc O O O O atis_airfare
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date O O O B-fromloc O B-toloc O B-toloc atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O O O atis_airfare
+O O O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_airfare
+B-fromloc O B-toloc O O O O O O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-depart_date B-depart_time B-fromloc O B-toloc O B-toloc atis_flight
+B-fromloc I-fromloc O B-fromloc I-fromloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date I-depart_time O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O atis_flight
+﻿O B-fromloc O B-toloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O B-depart_date I-depart_date O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O B-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc B-depart_time O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O O O atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O O O O O O atis_date#atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O O B-toloc O O O O O O O O O atis_airfare
+B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+O B-toloc I-toloc O O O O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O O O O B-fromloc O B-toloc O O O O O atis_date
+B-depart_date I-depart_date B-fromloc O B-toloc B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date B-depart_time I-depart_time I-depart_time O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+O O B-depart_date I-depart_date O O O O O O O O O B-toloc O B-toloc O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-depart_time O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc O B-toloc O O atis_airfare
+O O O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date atis_flight
+B-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-fromloc O B-toloc O O O O B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc I-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_time O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc I-toloc I-toloc I-toloc O O O atis_flight
+O O O O O O O B-toloc O O O O B-depart_date I-depart_date I-depart_date O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_date
+B-depart_date I-depart_date O O B-fromloc B-toloc O O O atis_airfare
+O B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+O B-fromloc B-toloc O O O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc O B-toloc O B-toloc O O B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_date
+B-depart_date I-depart_date B-fromloc B-toloc O O O O O atis_flight
+B-fromloc O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date O O B-fromloc O B-toloc O O B-toloc I-toloc O O B-fromloc O O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc I-toloc O B-depart_date O O atis_airfare
+B-fromloc O B-toloc B-depart_date B-depart_time O atis_flight
+B-depart_date I-depart_date O B-toloc O O O atis_flight
+B-depart_date I-depart_date O O B-toloc I-toloc I-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O O O O O O O B-depart_date I-depart_date I-depart_date O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-fromloc O B-toloc I-toloc B-depart_date atis_flight
+O O O B-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O atis_airfare
+B-fromloc O B-toloc O O O O O O B-depart_date atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc I-toloc I-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-toloc O O O atis_flight
+B-fromloc O B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+O O O B-depart_date O B-fromloc O B-toloc O O O O atis_airfare
+O B-fromloc I-fromloc O O B-toloc I-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O O O O O O O atis_airfare
+O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O atis_flight
+B-depart_date O O B-fromloc O O B-toloc O O O O O O O atis_airfare
+O O B-fromloc O O O O B-toloc O O O O O O O O O O O O O O atis_airfare
+B-fromloc I-fromloc O B-fromloc O B-toloc O B-toloc O O O O atis_flight
+O B-fromloc O B-toloc O B-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+O O O B-depart_date I-depart_date O O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_date
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O O O O O O O O atis_flight
+B-depart_date B-toloc O O atis_flight
+O B-fromloc O B-fromloc O B-toloc O O atis_airfare
+O O O B-fromloc O B-fromloc O atis_flight
+B-fromloc O B-toloc I-toloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O O B-toloc O O O O O O O O O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-toloc O O O atis_flight
+B-depart_date I-depart_date O B-toloc I-toloc O O O O atis_airfare
+O B-fromloc O B-toloc B-depart_date I-depart_date O O O O atis_airfare
+O O O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-toloc O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+B-toloc B-depart_date O O O atis_airfare
+O O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O O O B-fromloc B-toloc O O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc I-toloc O O atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_airfare
+B-fromloc O B-toloc O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc I-toloc atis_flight
+O B-depart_date O B-fromloc O B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O B-depart_date I-depart_date I-depart_date O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O O O O O O atis_airfare
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O O B-toloc O O B-toloc O O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O B-depart_time O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O B-fromloc O B-toloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-toloc O O B-fromloc O B-fromloc I-fromloc I-fromloc O O O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date O O O O atis_flight
+O B-fromloc O B-toloc B-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O O O O O O O O O O atis_airfare
+O O O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+O O B-toloc O O B-depart_date atis_flight
+O B-fromloc O B-toloc O O atis_flight
+O B-fromloc O B-toloc O O B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc O O O atis_flight
+O B-fromloc O B-toloc B-depart_date O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+O B-depart_date O B-fromloc B-toloc O O O O atis_flight
+O B-depart_date O B-toloc O atis_flight
+B-fromloc O B-toloc O O atis_flight
+O O B-fromloc O O O atis_flight
+O B-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O atis_flight
+O O O O B-fromloc O B-toloc O atis_flight
+O O B-fromloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-toloc O O O atis_flight
+O B-depart_date O B-toloc O O atis_flight
+B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc O atis_flight
+O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date B-fromloc O B-toloc O atis_flight
+O B-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O B-toloc O O O atis_flight
+B-depart_date B-fromloc O B-toloc O O atis_flight
+O B-toloc O O O O O atis_airfare
+B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O O O B-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc I-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date O B-toloc atis_flight
+B-fromloc O O O O O O O O O atis_city
+B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+O B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O O atis_airfare
+O B-fromloc O B-toloc B-depart_date O O atis_flight
+O O B-toloc O O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+O B-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-fromloc O B-fromloc O B-toloc O O atis_airfare
+O B-fromloc O B-fromloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc atis_flight
+O B-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-fromloc O B-toloc O B-depart_date I-depart_date atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O B-toloc B-depart_date O O atis_flight
+O B-fromloc I-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+O B-fromloc O B-toloc O O B-depart_date I-depart_date O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+O B-fromloc O B-toloc O O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+O B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date O O O atis_flight
+B-fromloc O B-toloc O O atis_flight
+O B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-depart_time I-depart_time I-depart_time B-fromloc I-fromloc I-fromloc O B-toloc O B-toloc O O O O B-depart_date B-depart_time atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-depart_date O O O O O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O O O O atis_airfare
+O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O O B-toloc O O atis_flight
+B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O O O atis_flight
+O O O B-fromloc O O O B-toloc O O O O O O O B-depart_date I-depart_date O O atis_date#atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O B-depart_time I-depart_time O B-depart_time O B-depart_time O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date O B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc I-toloc atis_flight
+B-depart_date O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+O O O O B-depart_date B-fromloc O B-toloc B-fromloc O B-toloc O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O B-toloc O B-toloc O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O O atis_flight
+O O O B-toloc I-toloc I-toloc B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O B-fromloc O B-toloc I-toloc O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date atis_flight
+B-fromloc O B-toloc O O O atis_flight
+O O B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O O O O O atis_city
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date B-depart_time atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date B-depart_time O B-depart_date I-depart_date B-depart_time atis_flight
+B-depart_date O B-fromloc O B-toloc O O O O atis_date
+O B-fromloc O B-toloc I-toloc I-toloc O B-toloc O O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_city
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O O O O O O O O atis_flight
+O B-fromloc O O O O O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O B-depart_date O O O O O B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc B-toloc I-toloc O B-toloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O B-toloc O O O O atis_flight
+B-depart_date O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc B-depart_date O B-toloc O O atis_airfare
+B-fromloc B-depart_date O B-toloc O B-toloc O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+O O O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O O O O O atis_airfare
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O B-depart_date O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-depart_date O B-fromloc O B-toloc O O atis_flight
+O O O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-depart_date B-depart_time O B-fromloc O B-toloc O O O O O O atis_flight
+O B-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O B-depart_time O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O O O O O O O O O O O O O O O B-fromloc I-fromloc I-fromloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-fromloc O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_airfare
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-toloc atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O B-fromloc O O O O O O O O O O O O O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O O O O O O O O O O O atis_airfare
+O B-depart_date B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+O O O O O O B-toloc I-toloc O O atis_city
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+O O O O O O O atis_flight
+B-fromloc O B-toloc O O O O O O O O atis_date
+B-fromloc O B-toloc O O O O O O O B-depart_date I-depart_date atis_date
+B-depart_date B-fromloc O B-toloc O O O O O O O O O O O O O O O atis_date#atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-toloc O O O O O O O O O O O O O atis_city
+B-fromloc O O B-toloc I-toloc O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date O B-toloc O O O O O O B-fromloc O B-fromloc O O O atis_flight
+B-fromloc O O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_flight
+O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O atis_flight
+B-depart_date B-toloc O atis_flight
+O B-depart_date O O O O B-fromloc O B-fromloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O B-toloc O O O O O atis_airfare
+B-depart_date O O O B-fromloc O B-toloc O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-toloc O B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O O O O B-fromloc I-fromloc O B-toloc atis_flight
+O O O O O O B-fromloc I-fromloc O O O B-toloc I-toloc O O O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date O B-toloc O O O atis_flight
+O B-fromloc I-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O O O O O B-fromloc I-fromloc I-fromloc O O O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O O O O O atis_airfare
+O O O O B-fromloc O B-toloc O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O atis_flight
+O O O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O O O O O O O O atis_date
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date O O O B-depart_date I-depart_date I-depart_time O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O O atis_flight
+B-fromloc O B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date O O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-depart_time I-depart_time I-depart_time B-fromloc I-fromloc I-fromloc O B-toloc O B-toloc O O O O B-depart_date B-depart_time atis_flight
+B-depart_date O O O O atis_flight
+B-depart_date I-depart_date O B-toloc O O O O atis_flight
+O O O O B-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-toloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O O atis_flight
+B-depart_date O O B-toloc O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+O B-fromloc O B-toloc O O O atis_flight
+O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O B-toloc O atis_airfare
+O O B-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O B-toloc O O O O O B-depart_date I-depart_date O B-fromloc O B-toloc O B-toloc O atis_airfare
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O B-toloc O O O O O O O atis_flight
+O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O O O O O O atis_flight
+O B-fromloc O B-toloc I-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+O O B-fromloc O B-toloc O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_date#atis_airfare
+﻿O O O O O O O B-toloc O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc B-toloc O B-depart_date I-depart_date O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc B-toloc O O O B-fromloc B-toloc O O O atis_airfare
+O O O O O B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O B-fromloc B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+O O B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O B-depart_time I-depart_time O B-depart_time O O atis_flight
+O O B-fromloc O B-toloc O O B-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc I-toloc I-toloc O O atis_flight
+B-fromloc O B-toloc O B-toloc O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O O B-toloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date O O O O B-fromloc B-toloc O B-fromloc B-toloc O O O O atis_airfare
+B-fromloc O B-toloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+O O O O O B-fromloc O O B-depart_date O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc I-fromloc O B-toloc atis_flight
+O B-depart_date O B-fromloc O B-toloc I-toloc O O O O atis_airfare
+O B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date O O B-toloc I-toloc O atis_flight
+O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc O B-toloc O B-fromloc O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O B-fromloc B-toloc O B-fromloc B-toloc O B-fromloc B-toloc atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc I-fromloc O B-toloc O O O B-fromloc I-fromloc O B-toloc O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc B-toloc O O atis_flight
+B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O O O O O O B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O atis_flight
+O O O O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O B-fromloc I-fromloc I-fromloc O O O O atis_flight
+O O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc O atis_flight
+B-toloc O B-toloc O O O O O atis_city
+B-fromloc O B-toloc O O B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date O O O B-fromloc B-toloc O O atis_airfare
+B-depart_date I-depart_date B-toloc O B-toloc O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date O O O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O atis_flight
+O B-fromloc B-toloc O O B-depart_time I-depart_time O O B-depart_time I-depart_time O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O atis_flight
+O B-fromloc B-toloc O O B-depart_time I-depart_time O O B-depart_time I-depart_time O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O O B-fromloc B-toloc O O O O O O O O O O atis_flight
+O O B-fromloc B-toloc B-depart_time O atis_flight
+O O B-fromloc B-toloc B-depart_time O atis_flight
+﻿O B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+O B-fromloc O B-toloc O O atis_flight
+O B-fromloc O B-toloc atis_flight
+O B-fromloc O O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-fromloc B-toloc O O B-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+O B-fromloc O O B-toloc I-toloc O O O atis_flight
+O O B-depart_date O B-toloc O B-fromloc atis_flight
+O O O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+O B-fromloc O O B-toloc I-toloc O O O O O O O O O O O O atis_flight
+B-fromloc O O B-toloc O O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date O B-toloc O O O B-fromloc O B-toloc O B-toloc O O O O atis_flight
+O B-fromloc O O B-toloc O B-depart_date O O atis_flight
+O O B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O atis_flight
+O O O O O B-depart_date I-depart_date O O O B-toloc O O O O atis_flight
+O O O O O B-depart_date I-depart_date O O B-fromloc B-toloc O O O O O O O O atis_date
+O O O B-fromloc O B-toloc B-depart_date O atis_flight
+O B-fromloc O B-fromloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O B-toloc O O O O O atis_flight
+O B-fromloc O B-toloc I-toloc I-toloc I-toloc I-toloc I-toloc O B-depart_date I-depart_date O O O O O O O O atis_flight
+O B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O O O O atis_flight
+O O O O O B-depart_date I-depart_date B-fromloc O O O B-toloc I-toloc I-toloc O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+O B-fromloc O O O O O O O O O O B-toloc O O B-depart_date atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+O B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date O O O atis_flight
+O B-fromloc O O B-toloc B-depart_date I-depart_date O O O O O O O O O O O atis_flight
+O B-fromloc I-fromloc O O B-toloc I-toloc I-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+O O B-toloc O B-fromloc O B-depart_date I-depart_date I-depart_date O B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date O B-fromloc O B-toloc O O O atis_flight
+O B-fromloc B-depart_date O O B-toloc O atis_flight
+B-fromloc B-toloc O B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O O O atis_flight
+O B-fromloc B-depart_date I-depart_date I-depart_date O B-toloc O B-toloc atis_flight
+O B-fromloc O B-toloc I-toloc O B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O O B-toloc O O O O O O O O atis_city
+O B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O O O B-fromloc O B-toloc O atis_flight
+O B-fromloc B-depart_date I-depart_date O B-toloc O O O B-fromloc O B-toloc O O O O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date atis_flight
+B-fromloc B-toloc O O O B-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O B-depart_time O O O O O O O O O O O O O O atis_flight
+O O O O B-fromloc O B-toloc B-depart_date I-depart_date O O O O O atis_airfare
+B-fromloc I-fromloc B-toloc O B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O B-fromloc O B-toloc O O O B-fromloc O B-toloc O O O O B-fromloc O O O atis_flight
+B-fromloc O O O B-fromloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date O O atis_flight
+B-fromloc I-fromloc B-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+O B-fromloc O B-toloc O B-toloc O B-toloc O O O O B-depart_date I-depart_date O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-depart_date B-fromloc O B-toloc I-toloc O O O O O O O O O O atis_flight
+O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc I-fromloc I-fromloc O O O B-toloc O B-toloc O B-fromloc O O O O B-toloc I-toloc I-toloc atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O O O O O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O B-fromloc O O B-toloc O O B-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc I-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-toloc atis_flight
+B-fromloc I-fromloc I-fromloc O B-toloc B-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-toloc atis_flight
+B-depart_date B-toloc atis_flight
+B-depart_date O B-toloc I-toloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc atis_flight
+B-toloc O B-toloc atis_flight
+B-toloc I-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-toloc atis_flight
+B-depart_date B-toloc O O O atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O atis_flight
+B-depart_date B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date B-toloc O B-toloc atis_flight
+B-fromloc O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date O B-toloc B-fromloc O O O O atis_flight
+B-depart_date O B-toloc O B-fromloc O O atis_flight
+O O O O O B-toloc I-toloc I-toloc O atis_flight
+B-fromloc B-depart_date I-depart_date B-toloc I-toloc O O O O O atis_city
+B-depart_date B-fromloc O B-fromloc O B-fromloc O B-fromloc O O B-toloc O O O atis_flight
+O O O O B-fromloc O O B-toloc O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-toloc B-fromloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O B-fromloc B-toloc atis_flight
+B-depart_date O B-toloc atis_flight
+B-fromloc O B-toloc O B-fromloc O B-toloc B-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc B-depart_date I-depart_date I-depart_date O O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc O B-toloc B-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O atis_flight
+B-fromloc O B-toloc I-toloc O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date O B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc O B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O atis_flight
+B-depart_date O O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc O B-toloc I-toloc B-depart_date I-depart_date O O O O O O O atis_flight
+B-fromloc B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc O O B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date B-toloc O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc I-toloc B-toloc O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc B-fromloc I-fromloc I-fromloc O O O O O atis_flight
+B-depart_date O B-toloc I-toloc O O O O O O atis_flight
+﻿B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc O B-toloc I-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-toloc O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc I-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O O O O O O B-depart_date O O O atis_city
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O B-toloc O B-toloc O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-toloc O B-fromloc O atis_flight
+B-depart_date O O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-toloc B-fromloc O atis_flight
+B-toloc I-toloc B-fromloc O atis_flight
+B-fromloc O B-depart_date I-depart_date B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O B-fromloc O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O O O O O O O O O O O O O O B-fromloc O B-toloc O B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc B-toloc I-toloc atis_flight
+B-fromloc O O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O O O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O atis_flight
+B-fromloc O O O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc B-fromloc O atis_flight
+B-depart_date I-depart_date B-fromloc O O O O O O O O atis_flight
+B-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date O B-fromloc O B-toloc O O atis_flight
+O B-depart_date O O B-toloc I-toloc I-toloc O O atis_flight
+B-fromloc B-depart_time I-depart_time B-toloc O O atis_flight
+B-fromloc B-depart_time I-depart_time B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+O B-depart_date B-depart_time O B-fromloc O O B-toloc O O O O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O O O O O atis_city
+B-depart_date I-depart_date I-depart_date O B-toloc O atis_flight
+B-fromloc O B-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date O O O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-fromloc B-depart_date I-depart_date I-depart_date O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O O O O O O atis_date#atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc B-depart_time I-depart_time O O O O O B-fromloc O B-toloc O O O O B-depart_time I-depart_time O B-depart_time O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O B-toloc B-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc O O O O atis_date
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O O O O O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date O O O O O O O O O O atis_city
+B-depart_date I-depart_date O O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc B-toloc O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date O B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+﻿B-fromloc O B-toloc O O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O O O O O O O atis_city
+B-depart_date B-fromloc O B-toloc O O B-depart_date I-depart_date O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-depart_date I-depart_date O O O O O atis_city
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc I-fromloc O B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-fromloc O B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O B-fromloc O B-toloc O B-toloc O atis_flight
+O O B-fromloc O O O O O O atis_city
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time I-depart_time O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc I-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-fromloc O B-toloc O O B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc O atis_flight
+O O O B-depart_date I-depart_date O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_airfare
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O atis_flight
+B-fromloc B-toloc B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O O atis_airfare
+O B-toloc O O O O O O B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O B-depart_time I-depart_time O B-depart_time I-depart_time O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_date
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O atis_airfare
+B-depart_date B-toloc O O O atis_airfare
+B-fromloc O B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O O O O O O O B-fromloc O B-toloc O B-toloc O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+O O B-depart_date I-depart_date O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-fromloc O B-toloc atis_flight
+O B-toloc O O B-fromloc O B-toloc O B-depart_date O O O O O O O O O O O O O O O O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O O O O atis_airfare
+O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O atis_airfare
+B-depart_date O B-fromloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O O O O O atis_airfare
+O B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O atis_airfare
+B-fromloc O B-toloc B-depart_date O O O atis_airfare
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O atis_flight
+O B-toloc O B-depart_date I-depart_date O O O O O O atis_airfare
+O B-fromloc O B-fromloc O O B-toloc B-depart_date I-depart_date atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-depart_time B-fromloc O B-toloc O O O B-fromloc O B-toloc O O atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O B-toloc O O O O O O O O atis_flight
+O O O O B-toloc I-toloc O atis_flight
+B-fromloc O B-toloc O B-fromloc O B-toloc O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_airfare
+O B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+O B-toloc O B-fromloc O O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O O O O O O B-depart_date I-depart_date B-depart_time O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date B-fromloc B-toloc O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc O O atis_airfare
+B-depart_date I-depart_date B-fromloc B-toloc O O B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O B-depart_date I-depart_date B-fromloc O B-toloc O atis_airfare
+O O O B-toloc O B-toloc B-fromloc O B-fromloc I-fromloc O atis_flight
+B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc O O O B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O O O O O O O O O O O O O O O O atis_city
+B-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date O O O O B-fromloc B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-depart_time B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date O O O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date O O O B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date O B-fromloc O B-toloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O O O O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+O O O O O O O B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc I-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O O atis_airfare
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-depart_time O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date O B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O atis_flight
+B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_airfare
+B-depart_date I-depart_date O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date O O O O O O O O B-fromloc I-fromloc I-fromloc O B-toloc O O O O O O atis_airfare
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O B-depart_time O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+O B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O O O O B-fromloc O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc B-toloc O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc I-fromloc O B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-toloc O O atis_flight
+B-fromloc O B-toloc I-toloc atis_flight
+B-fromloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O O B-toloc O B-depart_date I-depart_date O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc I-toloc O O O O atis_flight
+B-fromloc B-toloc O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O O O O O O O atis_flight
+B-fromloc B-toloc O O O B-depart_date I-depart_date O O atis_flight
+B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+O O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_airfare
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O O atis_flight
+O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date O O O O O atis_flight
+B-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-toloc B-depart_date I-depart_date atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O O O B-fromloc O B-toloc O O atis_date
+B-fromloc O B-toloc atis_flight
+O B-fromloc O B-toloc I-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O B-depart_time O B-depart_time I-depart_time I-depart_time O O O atis_flight
+B-fromloc O B-toloc O B-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date O O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-toloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-depart_time O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O O atis_flight
+O B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O O O O atis_flight
+B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date O O O O O O O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O B-fromloc O B-toloc O O O B-depart_time O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc I-toloc O O B-depart_date I-depart_date I-depart_date O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O O O B-fromloc O B-toloc O atis_flight
+O O O O O O O B-fromloc O B-fromloc O B-toloc O O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O O O B-fromloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc O B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-fromloc O O O O O atis_flight
+B-depart_date I-depart_date B-fromloc B-toloc O atis_flight
+B-depart_date B-fromloc O B-toloc O O O O O atis_flight
+B-depart_date I-depart_date O O B-fromloc B-toloc O O O O O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date atis_flight
+B-depart_date B-fromloc O B-toloc I-toloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+B-fromloc I-fromloc I-fromloc O B-toloc B-depart_date I-depart_date O O O O O O O O O atis_airfare
+B-fromloc I-fromloc O B-toloc B-depart_date I-depart_date atis_flight
+O O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O B-toloc O B-fromloc O B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-depart_date B-fromloc B-toloc O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+﻿B-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O O O atis_flight
+B-fromloc O B-toloc O O O O B-depart_date I-depart_date O O O O O O atis_flight
+O O B-depart_time I-depart_time B-depart_date I-depart_date O O O O atis_flight
+B-fromloc O B-toloc O B-toloc B-depart_date I-depart_date I-depart_date O atis_flight
+B-depart_date I-depart_date O O O B-fromloc O B-toloc O B-fromloc O B-toloc O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc I-fromloc B-toloc B-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date atis_flight
+O O O O O O O atis_flight
+B-fromloc O B-fromloc O B-fromloc O B-toloc I-toloc I-toloc I-toloc O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-depart_time O B-fromloc O B-toloc O O O O atis_flight
+B-fromloc O B-toloc B-depart_date I-depart_date I-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc I-fromloc O O O O B-toloc atis_flight
+B-fromloc B-toloc O B-depart_date O O O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+O B-fromloc O B-toloc O O B-fromloc O O B-toloc O O B-depart_date I-depart_date O O O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-fromloc O B-toloc O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O O O O atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O B-fromloc O B-toloc atis_flight
+B-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O O O O O atis_flight
+O B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O O O O O atis_airfare
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date I-depart_date B-fromloc O B-toloc O atis_flight
+B-fromloc B-toloc B-depart_date I-depart_date O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O B-toloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O O B-fromloc O B-toloc O O O atis_flight
+B-depart_date I-depart_date O B-fromloc B-toloc O O O B-fromloc I-fromloc I-fromloc I-fromloc B-toloc O O O O O O atis_flight
+B-fromloc O B-toloc O B-depart_date I-depart_date I-depart_date I-depart_date O O O O atis_flight
+B-depart_date I-depart_date I-depart_date I-depart_date O B-toloc O B-depart_date O O O O B-fromloc atis_flight

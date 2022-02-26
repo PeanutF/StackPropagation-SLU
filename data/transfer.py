@@ -38,9 +38,37 @@ def process_single(target, input_sentence):
             lattice.append(index)
             index += 1
 
-
     result = ""
     for i in range(sentence):
-        result += sentence[i] + " " + output_seq[i] + " " + output_word + " " +
+        result += sentence[i] + " " + output_seq[i] + " " + output_word + " "
 
 
+def crosswoz_to_sfid():
+    with open("crosswoz/test.txt", encoding="UTF-8") as file:
+        with open("crosswoz/sfid/test/label", "w", encoding="UTF-8") as label_file:
+            with open("crosswoz/sfid/test/seq.in", "w", encoding="UTF-8") as in_file:
+                with open("crosswoz/sfid/test/seq.out", "w", encoding="UTF-8") as out_file:
+                    process_file(file, label_file, in_file, out_file)
+                    print("ok")
+
+
+def process_file(file, label_file, in_file, out_file):
+    sentence = ""
+    out_seq = ""
+    for line in file.readlines():
+        line = line.split(" ")
+        if len(line) == 3:
+            sentence += line[0] + " "
+            out_seq += line[1] + " "
+        elif len(line) == 1 and line[0] != "\n":
+            sentence = sentence[:-1]
+            out_seq = out_seq[:-1]
+            label_file.write(line[0])
+            in_file.write(sentence + "\n")
+            out_file.write(out_seq + "\n")
+            sentence = ""
+            out_seq = ""
+
+
+if __name__ == '__main__':
+    crosswoz_to_sfid()
