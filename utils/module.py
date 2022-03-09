@@ -12,16 +12,17 @@ import math
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from torch.autograd import Variable
-from torch.nn import Parameter, init
 from torch.nn.utils.rnn import pack_padded_sequence
 from torch.nn.utils.rnn import pad_packed_sequence
 
+global train_args
 
 class ModelManager(nn.Module):
 
     def __init__(self, args, num_word, num_chinese_words, num_slot, num_intent, max_sentence_length=200):
         super(ModelManager, self).__init__()
+        global train_args
+        train_args = args
 
         self.__num_word = num_word
         self.__num_chinese_words = num_chinese_words
@@ -140,14 +141,15 @@ class ModelManager(nn.Module):
             for i, loc_item in enumerate(item):
                 position_matrix[index][i] = squeeze_pe[loc_item.int()]
 
-        related_tensor = torch.add(word_tensor, chinese_word_tensor)
+        # related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
-        lstm_hiddens = self.__encoder(related_tensor, seq_lens)
+
+        lstm_hiddens = self.__encoder(word_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
 
-        attention_hiddens_with_loc = self.__attention_with_loc(related_tensor, seq_lens, loc_vector=position_matrix)
+        attention_hiddens_with_loc = self.__attention_with_loc(word_tensor, seq_lens, loc_vector=position_matrix)
 
-        attention_hiddens = self.__attention(related_tensor, seq_lens)
+        attention_hiddens = self.__attention(word_tensor, seq_lens)
         hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
         hiddens_with_loc = torch.cat([attention_hiddens_with_loc, lstm_hiddens], dim=1)
 
@@ -444,7 +446,8 @@ class QKVAttention(nn.Module):
 
         # todo for dev
         max_len = 200
-        batch_size = 16
+        global train_args
+        batch_size = train_args.batch_size
         self.param = nn.Parameter(torch.ones(batch_size, max_len, self.__hidden_dim)).cuda()
 
 
