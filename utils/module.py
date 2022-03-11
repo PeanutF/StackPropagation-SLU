@@ -61,7 +61,7 @@ class ModelManager(nn.Module):
         )
 
         self.__attention_with_loc = SelfAttention(
-            self.__args.word_embedding_dim,
+            self.__args.encoder_hidden_dim + self.__args.attention_output_dim,
             self.__args.attention_hidden_dim,
             self.__args.attention_output_dim,
             self.__args.dropout_rate
@@ -76,7 +76,7 @@ class ModelManager(nn.Module):
         )
         # Initialize an Decoder object for slot.
         self.__slot_decoder = LSTMDecoder(
-            self.__args.encoder_hidden_dim + self.__args.attention_output_dim,
+            self.__args.attention_output_dim,
             self.__args.slot_decoder_hidden_dim,
             self.__num_slot, self.__args.dropout_rate,
             embedding_dim=self.__args.slot_embedding_dim,
@@ -141,17 +141,17 @@ class ModelManager(nn.Module):
             for i, loc_item in enumerate(item):
                 position_matrix[index][i] = squeeze_pe[loc_item.int()]
 
-        # related_tensor = torch.add(word_tensor, chinese_word_tensor)
+        related_tensor = torch.add(word_tensor, chinese_word_tensor)
 
 
-        lstm_hiddens = self.__encoder(word_tensor, seq_lens)
+        lstm_hiddens, pad_lstm_hiddens = self.__encoder(related_tensor, seq_lens)
         # transformer_hiddens = self.__transformer(pos_tensor, seq_lens)
+        attention_hiddens, pad_attention_hiddens = self.__attention(related_tensor, seq_lens)
+        hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)  # to intent prediction
+        padded_hiddens = torch.cat([pad_attention_hiddens, pad_lstm_hiddens], dim=2)  # to loc attention
 
-        attention_hiddens_with_loc = self.__attention_with_loc(word_tensor, seq_lens, loc_vector=position_matrix)
-
-        attention_hiddens = self.__attention(word_tensor, seq_lens)
-        hiddens = torch.cat([attention_hiddens, lstm_hiddens], dim=1)
-        hiddens_with_loc = torch.cat([attention_hiddens_with_loc, lstm_hiddens], dim=1)
+        attention_hiddens_with_loc = self.__attention_with_loc(padded_hiddens, seq_lens, loc_vector=position_matrix)
+        # hiddens_with_loc = torch.cat([attention_hiddens_with_loc, lstm_hiddens], dim=1)
 
         pred_intent = self.__intent_decoder(
             hiddens, seq_lens,
@@ -165,7 +165,7 @@ class ModelManager(nn.Module):
             feed_intent = pred_intent
 
         pred_slot = self.__slot_decoder(
-            hiddens_with_loc, seq_lens,
+            attention_hiddens_with_loc[0], seq_lens,
             forced_input=forced_slot,
             extra_input=feed_intent
         )
@@ -283,7 +283,7 @@ class LSTMEncoder(nn.Module):
         lstm_hiddens, (h_last, c_last) = self.__lstm_layer(packed_text)
         padded_hiddens, _ = pad_packed_sequence(lstm_hiddens, batch_first=True)
 
-        return torch.cat([padded_hiddens[i][:seq_lens[i], :] for i in range(0, len(seq_lens))], dim=0)
+        return torch.cat([padded_hiddens[i][:seq_lens[i], :] for i in range(0, len(seq_lens))], dim=0), padded_hiddens
 
 
 class LSTMDecoder(nn.Module):
@@ -424,7 +424,7 @@ class QKVAttention(nn.Module):
     especially, when query == key == value, it's self-attention.
     """
 
-    def __init__(self, query_dim, key_dim, value_dim, hidden_dim, output_dim, dropout_rate):
+    def __init__(self, query_dim, key_dim, value_dim, hidden_dim, output_dim, dropout_rate, loc_dim=64):
         super(QKVAttention, self).__init__()
 
         # Record hyper-parameters.
@@ -434,13 +434,14 @@ class QKVAttention(nn.Module):
         self.__hidden_dim = hidden_dim
         self.__output_dim = output_dim
         self.__dropout_rate = dropout_rate
+        self.__loc_dim = loc_dim
 
         # Declare network structures.
         self.__query_layer = nn.Linear(self.__query_dim, self.__hidden_dim)
         self.__key_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
         self.__value_layer = nn.Linear(self.__value_dim, self.__output_dim)
-        self.__loc_layer = nn.Linear(self.__key_dim, self.__hidden_dim)
-        self.__loc_key = nn.Linear(self.__key_dim, self.__hidden_dim)
+        self.__loc_layer = nn.Linear(self.__loc_dim, self.__hidden_dim)
+        self.__loc_key = nn.Linear(self.__loc_dim, self.__hidden_dim)
         self.__dropout_layer = nn.Dropout(p=self.__dropout_rate)
         self.__weight = nn.Parameter(torch.ones(1))
 
@@ -537,7 +538,7 @@ class SelfAttention(nn.Module):
             [attention_x[i][:seq_lens[i], :] for
              i in range(0, len(seq_lens))], dim=0
         )
-        return flat_x
+        return flat_x, attention_x
 
 class PositionalEncoding(nn.Module):
 
